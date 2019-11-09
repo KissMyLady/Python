@@ -1,18 +1,18 @@
-## Web服务器
+## Python高级语法  
 
-## :watermelon: GIL全局解释器锁
+## :watermelon: GIL全局解释器锁  
 - [GIL全局解释器锁1]()
 - [GIL全局解释器锁2]()
 
-## :wrench:  深拷贝和浅拷贝
+## :wrench:  深拷贝和浅拷贝  
 - [深拷贝和浅拷贝]()
 
   
-## :floppy_disk: 私有化
+## :floppy_disk: 私有化  
 - [私有化]()
 
  
-## :pencil2: 导入包
+## :pencil2: 导入包  
 - [import]()  
 
 
