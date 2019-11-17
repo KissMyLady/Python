@@ -311,7 +311,7 @@ def say(name, age):
     
 say("christine",18)
 ```
-
+## 3.6装饰器使用  
 ```Python
 # 定义函数：完成包裹数据
 def makeBold(fn):
