@@ -1,15 +1,15 @@
 ## Python高级语法  
 
-##  :computer: 闭包  
-- [闭包]()  
+##  :computer:  
+
  
-## :watermelon: 装饰器 
-- [装饰器的实现]()  
+## :watermelon: 
+
 
 ## :wrench:    
 
 
-## :floppy_disk: orm  
+## :floppy_disk: 
 
 
 ## :pencil2: 高级方法  
@@ -20,6 +20,8 @@
 - [GIL全局解释器锁2]()
 - [元类]()  
 - [orm]()  
+- [闭包](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/closure.md)  
+- [装饰器的实现]()  
 
 ## :bulb: OOP  
 - [04-方法解析顺序表MRO]()  
@@ -43,7 +45,6 @@
 
 转载文章不限制，记得起就写，懒得写就算了，不强求。  
 
-### 此 致  
-### 敬 礼  
+
 
 
