@@ -234,7 +234,7 @@ Low BBB 你明白了吗？要是没明白的话，我晚上去你家帮你解决
 ### 3.1最简单的装饰器  
 ```Python    
 def funcl():
-    print("the day is a good day")
+    print("the day is a fun day today")
 
 def outer():
     print("+++++++++++++++++")
@@ -390,7 +390,7 @@ foo()
 ```
 
 ## 例2:被装饰的函数有参数  
- ```Pthon
+ ```Python
 from time import ctime, sleep
 def timefun(func):
     def wrapped_func(a, b):
@@ -409,7 +409,7 @@ foo(2,4)
  ```
  
 ## 例3:被装饰的函数有不定长参数  
-```Pythoin
+```Python
 from time import ctime, sleep
 def timefun(func):
     def wrapped_func(*args, **kwargs):
