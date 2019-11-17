@@ -230,6 +230,88 @@ Low BBB 你明白了吗？要是没明白的话，我晚上去你家帮你解决
 
 
 ## 3. 再议装饰器  
+### 3.1最简单的装饰器  
+```Python    
+def funcl():
+    print("the day is a good day")
+
+def outer():
+    print("+++++++++++++++++")
+    funcl()   
+outer()
+```
+### 3.2装饰器概念  
+```Python    
+# 装饰器概念： 是一个闭包，把一个函数当做参数返回一个代替版的函数，
+#  本质上就是一个返回函数的函数
+def func1():
+    print("the day is a good day")
+
+def outer(func):
+    print("+++++++++++++++++")
+    func()   
+    
+func1 = outer(func1)
+```
+### 3.3装饰器本质  
+```Python
+# 本质是函数的函数
+def func1():
+    print("the day is a fun day today")
+
+def outer(x):                             #  func1在 outer里面后，  x = func1
+    def inner():                          #  定义inner()函数，
+        print("+++++++++++++++++")        #     封装功能
+        x()                               #  执行x()函数，，也就是执行：func1函数
+    return inner()  # 返回inner(化妆)结果  #  返回inner函数的执行情况
+
+# f是函数func1的加强版本   
+# ↘负责化妆
+f = outer(func1)                          #  对象化装饰结果
+f
+```
+### 3.4加强版装饰器  
+```Python
+# 稍微复杂装饰器
+# 使用@符号将装饰器应用到函数
+# @ python2.4支持使用@符号
+
+@outer                          # 相当于 say = outer(say)  
+def say(age):
+    print("Bonnie is %d years old girl" % (age))
+      
+# 不需要做任何代码变动的前提下增加额外功能
+# 这种参数只能修饰有一个参数的函数，并且不通用
+def outer(x):                   # 创建装饰器
+    def inner(age):             #   创建函数的函数
+        if age < 0:             #      封装
+            age = 0             #         
+        x(age)                  #    ← 调say函数
+    return inner                #   返回 inner
+
+#   ↘装饰器  ↓被装饰对象
+# say = outer(say)  
+
+say(-10)
+```
+### 3.5通用装饰器  
+```Python
+# 通用装饰器
+def outer(func):
+    def inner(*args, **kwargs):
+        # 添加修饰的功能
+        print("+++++++++")
+        func(*args, **kwargs)        
+    return inner
+
+@outer
+def say(name, age):  
+    # 函数参数理论上是无限制的，但实际上最好不要超过6到7个
+    print("my name is %s, I am %d years old" % (name, age))
+    
+say("christine",18)
+```
+
 ```Python
 # 定义函数：完成包裹数据
 def makeBold(fn):
@@ -473,21 +555,4 @@ func name is test
 ---装饰器中的功能---
 ----test---
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
