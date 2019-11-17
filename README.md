@@ -21,7 +21,7 @@
 - [元类]()  
 - [orm]()  
 - [闭包](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/closure.md)  
-- [装饰器的实现]()  
+- [装饰器的实现](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/decoration_ware.md)  
 
 ## :bulb: OOP  
 - [04-方法解析顺序表MRO]()  
