@@ -312,7 +312,26 @@ def say(name, age):
     
 say("christine",18)
 ```
-## 3.6装饰器使用  
+### 3.6有return的通用装饰器  
+```Python
+def set_func(faction_input):
+    def call_me(*args, **kwargs):
+        print('帽子')
+        print('衣服')
+        return faction_input(*args, **kwargs)
+    return call_me
+
+@set_func
+def test1(num, *args, **kwargs):
+    print('------test1------%d'% num)
+    print('------test1------', args)
+    print('------test1------', kwargs)
+    return 'ok'
+
+ret = test1(100)
+print(ret)
+```
+## 3.7装饰器使用  
 ```Python
 # 定义函数：完成包裹数据
 def makeBold(fn):
