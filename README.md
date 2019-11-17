@@ -1,20 +1,25 @@
 ## Python高级语法  
 
-## :watermelon: GIL全局解释器锁  
+##  :computer: 闭包  
+- [闭包]()  
+ 
+## :watermelon: 装饰器 
+- [装饰器的实现]()  
+
+## :wrench:    
+
+
+## :floppy_disk: orm  
+
+
+## :pencil2: 高级方法  
+- [私有化]()
+- [import]()  
+- [深拷贝和浅拷贝]()
 - [GIL全局解释器锁1]()
 - [GIL全局解释器锁2]()
-
-## :wrench:  深拷贝和浅拷贝  
-- [深拷贝和浅拷贝]()
-
-  
-## :floppy_disk: 私有化  
-- [私有化]()
-
- 
-## :pencil2: 导入包  
-- [import]()  
-
+- [元类]()  
+- [orm]()  
 
 ## :bulb: OOP  
 - [04-方法解析顺序表MRO]()  
