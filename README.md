@@ -1,6 +1,6 @@
 ## Python高级语法  
 
-##  :computer:  
+##  :computer:  Linux(Ubuntu)  
 
  
 ## :watermelon: 
