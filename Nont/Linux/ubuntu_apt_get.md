@@ -1,4 +1,4 @@
-Ubuntu 18.04安装心得体会
+安装Ubuntu18.04和Python3.8详细流程  
 ====
 
 ## 安装Ubuntu
