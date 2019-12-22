@@ -16,7 +16,7 @@
 - [私有化--敬请期待](#)
 - [Import--敬请期待](#)  
 - [深拷贝--浅拷贝](#)
-- [GIL全局解释器锁--敬请期待](#)
+- [点击进入--GIL全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
 - [元 类--敬请期待](#)  
 - [orm--敬请期待](#)  
 - [闭 包--敬请期待](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/closure.md)  
