@@ -13,21 +13,20 @@
 
 
 ## :pencil2: 高级方法  
-- [私有化]()
-- [import]()  
-- [深拷贝和浅拷贝]()
-- [GIL全局解释器锁1]()
-- [GIL全局解释器锁2]()
-- [元类]()  
-- [orm]()  
-- [闭包](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/closure.md)  
-- [装饰器的实现](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/decoration_ware.md)  
+- [私有化--敬请期待](#)
+- [Import--敬请期待](#)  
+- [深拷贝--浅拷贝](#)
+- [GIL全局解释器锁--敬请期待](#)
+- [元 类--敬请期待](#)  
+- [orm--敬请期待](#)  
+- [闭 包--敬请期待](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/closure.md)  
+- [闭包与装饰器--敬请期待](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/decoration_ware.md)  
 
 ## :bulb: OOP  
-- [04-方法解析顺序表MRO]()  
-- [继承-封装-多态]()  
-- [魔法方法]()  
-- [面向对象设计]()  
+- [04-方法解析顺序表MRO--敬请期待](#)  
+- [继承-封装-多态--敬请期待](#)  
+- [魔法方法--敬请期待](#)  
+- [面向对象设计--敬请期待](#)  
 
 
 
