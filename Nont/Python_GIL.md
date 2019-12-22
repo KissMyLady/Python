@@ -9,8 +9,8 @@ GIL全局解释器锁
 ### 说  明  
 ![gil-1](https://github.com/KissMyLady/Python/blob/master/Img/Python/gil-1.jpg)   
 先作如下推理:  
-1. 如果单核cpu全满, 说明线程之间没有关系;  
-2. 如果单核cpu没有全满, 说明线程之间还是有关系的;  
+1. 如果cpu全满, 说明线程之间没有关系;  
+2. 如果cpu没有全满, 说明线程之间还是有关系的;  
 
  
 ### 多线程现象:   
