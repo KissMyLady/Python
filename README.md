@@ -1,6 +1,7 @@
 ## Python高级语法  
 
 ##  :computer:  Linux(Ubuntu)  
+- [点击进入--工具大全](https://github.com/KissMyLady/Tools)  
 - [安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)   
  
 ## :watermelon: 
