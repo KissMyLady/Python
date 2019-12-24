@@ -7,7 +7,7 @@
 举个例子，微软的Office大约有4000万代码    
 4000万！  
 我们可以把重用的部分封装成一个个对象, 需要的时候调用    
-![点击进入--软件工程-OOP](https://github.com/KissMyLady/Computer/blob/master/Note/Software_Engineering.md)
+[点击进入--软件工程-OOP](https://github.com/KissMyLady/Computer/blob/master/Note/Software_Engineering.md)
 
 
 ## 封  装
