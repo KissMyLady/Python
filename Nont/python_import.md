@@ -22,7 +22,7 @@ import multiprocessing import Pool as P
 python路径有很多坑点  
 1. 在有些时候, 要导入模块, 但是导入报错, 基本上的原因就是因为路径不对  
 2. 验证sys的路径  
-![ScreenShot00010]()  
+![ScreenShot00010](https://github.com/KissMyLady/Tools/blob/master/img/ScreenShot00010.jpg)  
  
 ```Python
 sys.path.append('/home/mylady/xxx')     # 添加到列表的最后面   
