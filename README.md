@@ -1,33 +1,37 @@
 ## Python高级语法  
 
+
 ##  :computer:  Linux(Ubuntu)  
 - [点击进入--工具大全](https://github.com/KissMyLady/Tools)  
 - [安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)   
- 
-## :watermelon: 
-
-
-## :wrench:    
-
-
-## :floppy_disk: 
 
 
 ## :pencil2: 高级方法  
-- [点击进入--OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
 - [点击进入--Python模块导](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
 - [点击进入--深拷贝--浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/Python_Copy.md)
 - [点击进入--GIL全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
+- [点击进入--闭包与装饰器](https://github.com/KissMyLady/Python/blob/master/Nont/closure.md)  
 - [元 类--敬请期待](#)  
-- [orm--敬请期待](#)  
-- [闭 包--敬请期待](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/closure.md)  
-- [闭包与装饰器--敬请期待](https://github.com/KissMyLady/Core_Programming-fo-Python/blob/master/Nont/decoration_ware.md)  
+- [orm--敬请期待](#) 
+
 
 ## :bulb: OOP  
-- [04-方法解析顺序表MRO--敬请期待](#)  
+- [点击进入--OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
+- [方法解析顺序表MRO--敬请期待](#)  
 - [继承-封装-多态--敬请期待](#)  
 - [魔法方法--敬请期待](#)  
 - [面向对象设计--敬请期待](#)  
+
+
+## :watermelon: 
+- [敬请期待](#)
+
+## :wrench:    
+- [敬请期待](#)
+
+## :floppy_disk: 
+- [敬请期待](#)
+
 
 
 
