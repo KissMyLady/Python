@@ -2,8 +2,9 @@
 
 
 ##  :computer:  Linux(Ubuntu)  
-- [点击进入--工具大全](https://github.com/KissMyLady/Tools)  
-- [安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)   
+- [Linux常用命令与配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
+- [安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
+- [点击进入--常用工具大全](https://github.com/KissMyLady/Tools)  
 
 
 ## :pencil2: 高级方法  
