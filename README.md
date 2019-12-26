@@ -8,7 +8,7 @@
 
 
 ## :pencil2: 高级方法  
-- [点击进入--Python模块导](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
+- [点击进入--Python模块导入](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
 - [点击进入--深拷贝--浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/Python_Copy.md)
 - [点击进入--GIL全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
 - [点击进入--闭包与装饰器](https://github.com/KissMyLady/Python/blob/master/Nont/closure.md)  
