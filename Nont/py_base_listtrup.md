@@ -107,6 +107,7 @@ filee
 还有一位网友, 他认为256是分界点, 当数字超过255时, 地址就会重新分配   
 ![listandtrup-2](https://github.com/KissMyLady/Python/blob/master/Img/listandtrup-2.png)  
 网友结论二: 列表中的每个元素都对应一个地址，如果是可变类型，你修改它地址不会变（重新赋值就变了），如果是不可变类型就只能重新赋值  
+[Python小数据池，代码块深入剖析](https://www.cnblogs.com/jin-xin/articles/9439483.html)  
 
 ## 元祖
 元祖是一个可迭代对象:    
