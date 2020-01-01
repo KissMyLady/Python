@@ -1,6 +1,7 @@
 Python编程  
+=====
 
-## 常规基础  
+## :floppy_disk: 常规基础  
 - [1. Python中的数据类型](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_num.md)  
 
 
@@ -31,11 +32,6 @@ Python编程
 
 ## :wrench:    
 - [敬请期待](#)
-
-## :floppy_disk: 
-- [敬请期待](#)
-
-
 
 
 ### 排版  
