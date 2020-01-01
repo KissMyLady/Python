@@ -56,14 +56,11 @@ r/R	原始字符串 - 原始字符串：所有的字符串都是直接按照字�
 常用地方: 找路径  
 ![ScreenShot00-222](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00222.jpg)    
 
-### 3.lower() 
-将所有大写转小写
+### 3.lower() : 将所有大写转小写   
 
-### 4.upper() 
-将所有小写转大写
+### 4.upper() : 将所有小写转大写    
 
-### 5.swapcase()  
-大小写置换
+### 5.swapcase()  : 大小写置换  
 
 ### 6.replace()   
 爬虫中简单数据清洗的常用方法         
@@ -98,17 +95,14 @@ dict的实质是用空间换取时间
 ### 1.clear()   
 清空字典, 但是不会删除字典    
 
-### 2.copy()     
-属于浅拷贝   
+### 2.copy()  : 属于浅拷贝     
 
 ### 3.fromkeys()   
 引用创建新字典   
 ![ScreenShot00-227](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00227.jpg)    
 
 ### 4. get()     
-`dict.get('key')`
-
-查找键, 没有返回None   
+`dict.get('key')`, 查找键, 没有返回None       
 
 ### 5.items()  
 ![ScreenShot00-228](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00228.jpg)    
@@ -129,5 +123,5 @@ dict.keys()
 ![ScreenShot00-232](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00232.jpg)    
 
 ### 10.values()     
-同keys, 返回所有values值  
+同keys, 返回所有values值    
 
