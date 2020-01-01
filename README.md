@@ -1,4 +1,7 @@
-## Python高级语法  
+Python编程  
+
+## 常规基础  
+- [1.Python中的数据类型]()  
 
 
 ##  :computer:  Linux(Ubuntu)  
