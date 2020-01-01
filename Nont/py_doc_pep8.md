@@ -4,7 +4,7 @@
 
 ## 为什么要规范?  
 正规军与杂牌军的区别  
-一个令人讨厌, 一个令人欢迎  
+一个令群众讨厌, 一个受群众欢迎  
 [PEP8编码规范](https://blog.csdn.net/qq_33591055/article/details/99581791)    
 [PEP8编码规范--此文模板知识来源](https://www.cnblogs.com/liangmingshen/p/9273413.html)
 
