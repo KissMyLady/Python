@@ -8,6 +8,10 @@ Python编程
 - [4. 常用Python库说明与使用](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_package.md)  
 - [5. 文件打开剖析与上下文管理器](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_with.md)  
 
+## :watermelon: 
+- [1. Python语言特性--区别](#)
+
+
 ##  :computer:  Linux(Ubuntu)  
 - [Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
 - [安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
@@ -30,8 +34,7 @@ Python编程
 - [魔法方法--敬请期待](#)  
 
 
-## :watermelon: 
-- [敬请期待](#)
+
 
 ## :wrench:    
 - [敬请期待](#)
