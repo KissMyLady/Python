@@ -1,7 +1,7 @@
 Python编程  
 
 ## 常规基础  
-- [1.Python中的数据类型]()  
+- [1. Python中的数据类型](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_num.md)  
 
 
 ##  :computer:  Linux(Ubuntu)  
