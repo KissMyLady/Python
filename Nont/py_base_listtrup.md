@@ -104,7 +104,7 @@ filee
 再次查看id地址:   
 ![ScreenShot00-218](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00218.jpg)  
 经过向网友提问, 意见是: 读时共享, 写时重新分配  
-还有一位网友, 他认为255是分界点, 当数字超过255时, 地址就会重新分配   
+还有一位网友, 他认为256是分界点, 当数字超过255时, 地址就会重新分配   
 ![listandtrup-2](https://github.com/KissMyLady/Python/blob/master/Img/listandtrup-2.png)  
 网友结论二: 列表中的每个元素都对应一个地址，如果是可变类型，你修改它地址不会变（重新赋值就变了），如果是不可变类型就只能重新赋值  
 
