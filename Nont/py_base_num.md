@@ -81,7 +81,9 @@ Python中的运算符和操作对象
 `a == b` 返回 False  
 `a != b` 返回 true  
 `a <> b` 返回 true, 这个运算符类似`!=`  
-注意:  在很多程序中, 这个不怎么用    
+注意:  1. 在很多程序中, 这个不怎么用    
+2. 在python3中, 这个写法是错的      
+3. 在python2中, 这个写法是对的  
 ![ScreenShot00-182](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00182.jpg)  
 `a > b`  返回 False    
 `a < b`  返回 true    
