@@ -14,7 +14,7 @@ with与“上下文管理器”
 
 常规版:  
 ```Python
-def lv_common():
+def common():
     f = open("output.txt", "w")
     f.write("python之禅")
     f.close()
