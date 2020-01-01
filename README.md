@@ -3,8 +3,8 @@ Python编程
 
 ## :floppy_disk: 常规基础  
 - [1. Python中的数据类型](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_num.md)  
-- [2. 列表与元祖](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtrup.md)  
-- [3. 字符串与字典](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_strdict.md)    
+- [2. 列表与元祖--深拷贝与浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtrup.md)  
+- [3. 字符串与字典--方法详细说明](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_strdict.md)    
 
 ##  :computer:  Linux(Ubuntu)  
 - [Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
