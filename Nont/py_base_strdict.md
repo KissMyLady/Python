@@ -78,9 +78,9 @@ join的逆向方法
 
 ### 9. translate()  
 ![ScreenShot00-225](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00225.jpg)      
-这个东西我想密码学用的会很多, 二战期间德国人发明的英格玛机就是采用的这种字母对应加密方式  
-[阿兰图灵破解英格玛机](https://github.com/KissMyLady/Computer/blob/master/Note/early_com3.md)  
-
+这个东西我想密码学用的会很多, 二战期间德国人发明的英格玛机就是采用的这种字母对应加密方式   
+[阿兰图灵破解英格玛机](https://github.com/KissMyLady/Computer/blob/master/Note/early_com3.md)    
+[密码学--移位加密](https://github.com/KissMyLady/Computer/blob/master/Note/Noteworks_of_password.md)  
 
 字  典  
 ====
