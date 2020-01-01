@@ -1,5 +1,4 @@
-
-Python中的数据类型
+Python中的数据类型   
 ====
 Python中有6种标准对象类型:  
 > 1. Number    
@@ -62,7 +61,7 @@ Python中的运算符和操作对象
 * `+`  :加 - 两个对象相加	  
 ** `a + b` 输出结果 30  
 
-* `-`  :减 - 得到负数或是一个数减去另一个数	  
+* `-`  :减 - 得到负数或是一个数减去另一个数	    
 ** `a - b` 输出结果 -10  
   
 *  `*` :乘 - 两个数相乘或是返回一个被重复若干次的字符串  	
@@ -109,10 +108,10 @@ Python中的运算符和操作对象
 [关于自增自减运算符的一些问题](https://blog.csdn.net/lianghui0811/article/details/48736109)   
 [++自增与--自减](https://blog.csdn.net/sunxiwang/article/details/78553933)      
   
-### 位运运算符    
+### 位运运算符     
 按位运算符是把数字看作二进制来进行计算       
-![菜鸟教程--点击进入](https://www.runoob.com/python/python-operators.html)        
-很多教程, 市面上针对基础的书都基本一样,  互相借鉴, 连数字都没改,  菜鸟教程应该是范文         
+[菜鸟教程--点击进入](https://www.runoob.com/python/python-operators.html)          
+很多教程, 市面上针对基础的书都基本一样,  互相借鉴, 连数字都没改,  菜鸟教程应该是范文          
 我们让`a = 60`,  `b = 13`    
 ![ScreenShot00-183](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00183.jpg)      
 ![ScreenShot00-184](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00184.jpg)  
@@ -126,26 +125,26 @@ Python中的运算符和操作对象
 `a^b = 0011 0001` :当两对应的二进位相异时，结果为1   
 
 `~a  = 1100 0011` :对数据的每个二进制位取反, 即把1变为0,把0变为1    
-~[ScreenShot00-185](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00185.jpg)  
+![ScreenShot00-185](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00185.jpg)  
 
 `a << 2 == 240`   :二进位全部左移`1111 0000` ,高位丢弃，低位补0   
 
 `a >> 2 == 15`   :二进位全部右移`0000 1111`    
 
 ### 逻辑运算符  
-`a and b` :返回 20   
-`a or b`  :返回 10  
-`not(a and b` :返回 False
-![ScreenShot00-186](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00186.jpg)  
-实际在判断中用的多, 用if语句来配合`and or not`判断条件与否    
+`a and b` :返回 20      
+`a or b`  :返回 10      
+`not(a and b` :返回 False   
+![ScreenShot00-186](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00186.jpg)    
+实际在判断中用的多, 用if语句来配合`and or not`判断条件与否      
 
-### 身份运算符  
-`is`与 `==`区别:  
-> `is`用于判断两个变量引用对象是否为同一个(同一块内存空间),  `==`用于判断引用变量的值是否相等   
-![ScreenShot00-187](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00187.jpg)  
+### 身份运算符    
+`is`与 `==`区别:    
+> `is`用于判断两个变量引用对象是否为同一个(同一块内存空间),  `==`用于判断引用变量的值是否相等     
+![ScreenShot00-187](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00187.jpg)    
 
-### 成员运算符  
-`in`和`not in`   
+### 成员运算符   
+`in`和`not in`     
 ![ScreenShot00-188](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00188.jpg)  
 
 ### 优先级  
@@ -162,6 +161,7 @@ Python中的运算符和操作对象
 11. `is is not`	    
 12. `in not in`	    
 13. `not and or`	  
+
 
 
 ## Python标识符    
