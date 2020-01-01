@@ -46,7 +46,7 @@ def atan(x: SupportsFloat) -> float: ...
      
 
 
-## 2. time  
+### 2. time  
 [time使用方法](https://www.cnblogs.com/komean/p/10603518.html)
 [time模块进阶使用方法](https://www.cnblogs.com/pal-duan/p/10568829.html)  
 问题来了, 我怎么知道Python运行的慢还是快? 上面那个派计算的时候, 一定要拿一个秒表去卡么?   
@@ -105,7 +105,7 @@ print(time.localtime(time.time()))
 我想女朋友的生日一定不会忘,  太重要了嘛, 不是吗   
 
 
-## 3. Re正则表达式     
+### 3. Re正则表达式     
 [菜鸟教程Re文档](https://www.runoob.com/python/python-reg-expressions.html)尽管Python版本不同, 但re规则是一样的      
 [Re讲解--自文档](https://github.com/KissMyLady/WEB_Server/blob/master/Re/re.md)     
 [Re表达式--自文档](https://github.com/KissMyLady/WEB_Server/blob/master/Re/re_text.md)    
@@ -130,7 +130,7 @@ else:
 匹配任意邮箱:  `r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$'`
 
 
-## 4. Os模块     
+### 4. Os模块     
 打印文件夹方法:   
 ```Python  
 files = os.listdir(Path)
@@ -159,7 +159,7 @@ os.system("shutdown -a") 				# 取消注销计划
 os.system("taskkill /f /im notepad.exe") #关闭程序
 ```
 
-## 5. random模块  
+### 5. random模块  
 有时候, 我们需要打乱下顺序, 或是list, dict等内建序列     
 ```Python
 from random import shuffle
@@ -230,7 +230,7 @@ time.sleep(random.randint(2, 10))
 
 ## 6. loggingr日志模块  
 Python中有个logging模块可以完成相关信息的记录，在debug时用它往往事半功倍   	 
-#### 1. 日志级别
+### 1. 日志级别
 日志一共分成5个等级，从低到高分别是:     
 > DEBUG: 详细的信息,通常只出现在诊断问题上
 > INFO: 确认一切按预期运行
@@ -239,12 +239,12 @@ Python中有个logging模块可以完成相关信息的记录，在debug时用�
 > CRITICAL: 一个严重的错误,这表明程序本身可能无法继续运行
 这5个等级，也分别对应5种日志的方法： debug 、info 、warning 、error 、critical  
 默认的是`WARNING`, 当在WARNING或之上时才被跟踪   
-#### 2. 日志输出
+### 2. 日志输出
 有两种方式记录跟踪:  
 > 一种输出控制台，  
 > 另一种是记录到文件中，如日志文件   
 
-### 、将日志输出到控制台
+### 3. 将日志输出到控制台
 比如`log1.py`如下：   
 ```Python
 import logging  
