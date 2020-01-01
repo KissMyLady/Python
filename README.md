@@ -6,6 +6,7 @@ Python编程
 - [2. 列表与元祖--深拷贝与浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtrup.md)  
 - [3. 字符串与字典--方法详细说明](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_strdict.md)    
 - [4. 常用Python库说明与使用](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_package.md)  
+- [5. 文件打开剖析与上下文管理器](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_with.md)  
 
 ##  :computer:  Linux(Ubuntu)  
 - [Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
