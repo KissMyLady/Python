@@ -1,13 +1,8 @@
 Python中的数据类型   
 ====
 Python中有6种标准对象类型:  
-> 1. Number    
-> 2. String    
-> 3. List  
-> 4. Tuple  
-> 5. Sets  
-> 6. Dict  
-
+> 1. Number,  2. String,  3. List,  4. Tuple,  5. Sets,  6. Dict    
+  
 ## Number  
 ### 1. int
 ![ScreenShot00-177](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00177.jpg)   
