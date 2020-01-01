@@ -42,7 +42,7 @@ r/R	原始字符串 - 原始字符串：所有的字符串都是直接按照字�
 ### 4. 偏方  
 在Python3.6开始, 引入了一种新字符串: `_f-srting_`格式化字符串  
 例子:   
-![ScreenShot00221.jpg]()   
+![ScreenShot00-221](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00221.jpg)   
 替换字段是表达式, 在运行时计算, 然后使用format()协议格式化  
 
 
