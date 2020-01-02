@@ -11,6 +11,7 @@ Python编程
 ## :watermelon:  编程里有趣的面试题   
 - [1. Python语言特性--区别](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_py.md)
 - [2. 代码风格规范(PEP8)](https://github.com/KissMyLady/Python/blob/master/Nont/py_doc_pep8.md)  
+- [3. 字符串--小题目](https://github.com/KissMyLady/Python/new/master/Nont/py_base_str.md)
 
 ##  :computer:  Linux(Ubuntu)  
 - [Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
