@@ -1,4 +1,4 @@
-列表list与元祖tiple
+列表List与元祖Tuple
 ====
 Python中包含6种内建序列, list, tuple, srt, Unicode str, buffer对象, xrange对象  
 我们这里讨论最常用的两种: 列表和元祖  
