@@ -58,6 +58,41 @@ IndexOutOfBoundsException （下标越界异常）
 NullPointerException （空指针异常）
 SecurityException （安全异常）
 ```
+[Php爬虫框架节选](https://github.com/owner888/phpspider)  
+```php
+$configs = array(
+    'name' => '糗事百科',
+    'domains' => array(
+        'qiushibaike.com',
+        'www.qiushibaike.com'
+    ),
+    'scan_urls' => array(
+        'http://www.qiushibaike.com/'
+    ),
+    'content_url_regexes' => array(
+        "http://www.qiushibaike.com/article/\d+"
+    ),
+    'list_url_regexes' => array(
+        "http://www.qiushibaike.com/8hr/page/\d+\?s=\d+"
+    ),
+    'fields' => array(
+        array(
+            // 抽取内容页的文章内容
+            'name' => "article_content",
+            'selector' => "//*[@id='single-next-link']",
+            'required' => true
+        ),
+        array(
+            // 抽取内容页的文章作者
+            'name' => "article_author",
+            'selector' => "//div[contains(@class,'author')]//h2",
+            'required' => true
+        ),
+    ),
+);
+$spider = new phpspider($configs);
+$spider->start();
+```
 
 深入下去发现还是很多不一样, 但是作为语言来说, 一通百通    
 有学过乐器的都有这种同感, 乐理是一样的, 不同的是手按的方式不一样   
