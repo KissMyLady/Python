@@ -1,5 +1,5 @@
 
-## 谈谈对 Python与其他语言的区别  
+## Python与其他语言区别   
 我们先来看一段[常规java代码](https://github.com/DuGuQiuBai/Java/blob/master/day18/code/day18_Map_HashMap_TreeMap/src/cn/itcast_02/HashMapDemo.java)  
 ```java
 package cn.itcast_02;
