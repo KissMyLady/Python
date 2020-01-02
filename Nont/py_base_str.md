@@ -10,9 +10,9 @@ Number, String, List, Tuple, Sets, Dict
 让我们从一句话开始: 一切皆为对象，一切皆为对象的引用     
 > 可变数据类型  ：list 和 dict      
 > 不可变数据类型：int、 float、 string 和 tuple    
-![ScreenShot00-233](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00233.jpg)  
+![ScreenShot00-233](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00233.jpg)  
 
-![ScreenShot00-234](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00234.jpg)  
+![ScreenShot00-234](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00234.jpg)  
 
 ### 为什么叫不可变?  
 当改变赋值时, 原先的对象一定要被丢弃, 然后在内存中再创造一个新对象   
@@ -23,7 +23,7 @@ Number, String, List, Tuple, Sets, Dict
 
 ### 可变数据类型:  
 允许变量的值发生变化，即如果对变量进行append、`+=`等这种操作后，只是改变了变量的值，而不会新建一个对象，变量引用的对象的地址也不会变化  
-![ScreenShot-00235](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00235.jpg)  
+![ScreenShot-00235](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00235.jpg)  
 不过对于相同的值的不同对象，在内存中则会存在不同的对象，即每个对象都有自己的地址，相当于内存中对于同值的对象保存了多份，这里不存在引用计数，是实实在在的对象   
 [列表List与元祖Tuple](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtrup.md)  
 [Python小数据池，代码块深入剖析](https://www.cnblogs.com/jin-xin/articles/9439483.html)  
