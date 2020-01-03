@@ -116,8 +116,6 @@ for new_srt in [a, b, c]:
         n +=1
 ```
 
-
-
 ## 5. 将字符串"ilovechina"进行反转  
 第一种方法: pop   
 ```
@@ -144,7 +142,38 @@ for y in new_str:
     new += y
 print(new)
 ```
+第三种方法:  
+```Python
+class Stack(object):
+    def __init__(self):
+		self.items = list()
 
+	def is_empty(self):
+		return self.items == []
+	
+	def push(self, item):
+		self.items.append(item)
+
+	def pop(self):
+		return self.items.pop()
+	
+	def peek(self):
+		last = len(self.items)-1
+		return self.items[last]
+	
+	def size(self):
+		return len(self.items)
+
+s = Stack()
+for i in 'hello world':
+	s.push(i)
+	
+new_str = ''
+for i in range(s.size()):
+	new_str += s.pop()
+	
+print(new_str)
+```
 
 
 ## 6. 有一个字符串开头和末尾都有空格    
