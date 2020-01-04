@@ -7,14 +7,13 @@ a, b = 1, 2
 print(id(a), id(b))
 
 def line1(x):
-	print('函数line1: ',id(a), id(b), a * x + b)
+    print('函数line1: ',id(a), id(b), a * x + b)
 
 line1(2)
 print(a)
 ```   
-* #### 问题一:  a, b并未在函数导入, 这样执行会不会有毛病?   
-* #### 问题二:  a, b地址在函数内部会不会发生什么变化?  
-
+#### 问题一:  a, b并未在函数导入, 这样执行会不会有毛病?   
+#### 问题二:  a, b地址在函数内部会不会发生什么变化?  
 输出:   
 ```
 140715192980288 140715192980320
@@ -40,8 +39,8 @@ a, b = 1, 2
 print(id(a), id(b))
 
 def line1(x):
-	a += 1
-	print('函数line1: ',id(a), id(b), a * x + b)
+    a += 1
+    print('函数line1: ',id(a), id(b), a * x + b)
 
 line1(2)
 print(a)
@@ -70,15 +69,15 @@ line_6_1(4)
 1. 其中一种就是面向对象   
 ```Python
 class Get(object):
-	def __init__(self, a, b):
-		self.a = a
-		self.b = b
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-	def method(self, x):
-		print(self.a*x + self.b)
+    def method(self, x):
+        print(self.a*x + self.b)
 
-	def __call__(self, x):
-		print(self.a*x  + self.b)
+    def __call__(self, x):
+        print(self.a*x  + self.b)
 
 b = Get(2, 5)
 # b.method(5)
@@ -90,7 +89,7 @@ b(10)
 ### 看下闭包里的细节:   
 ```Python
 def line6(a, b):
-	pass
+    pass
 
 c = line6(7, 8)
 print(c)
@@ -98,9 +97,9 @@ print(c)
 打印: `None`
 ```Python
 def line6(a, b):
-	def create(x):
-		pass
-	return create
+    def create(x):
+        pass
+    return create
 c = line6(7, 8)
 print(c)
 ```
