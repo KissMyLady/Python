@@ -1,3 +1,313 @@
+闭包的概念  
+=====
+
+## 我们先来看一个小例子:  
+```Python
+a, b = 1, 2
+print(id(a), id(b))
+
+def line1(x):
+	print('函数line1: ',id(a), id(b), a * x + b)
+
+line1(2)
+print(a)
+```   
+* #### 问题一:  a, b并未在函数导入, 这样执行会不会有毛病?   
+* #### 问题二:  a, b地址在函数内部会不会发生什么变化?  
+
+输出:   
+```
+140715192980288 140715192980320
+函数line1:  140715192980288 140715192980320 4
+1
+```
+我们会发现:  
+#### 1. a, b在函数内部导入了, 并且没毛病  
+#### 2. a, b在函数内部与在函数外部id地址相同, 说明python这里引用的是同一个对象  
+
+究竟想说什么 ?  
+#### 1. a, b是全局变量   
+等等, a, b没有加global怎么变成了全局变量?  
+* 因为a, b为[不可变数据类型](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_str.md)      
+>  让我们从一句话开始: 一切皆为对象，一切皆为对象的引用  
+> 可变数据类型 ：list 和dict  
+> 不可变数据类型：int、 float、 string 和 tuple  
+
+#### 2. 函数内部引用不可变数据类型的全局变量没问题, 但修改就有问题  
+像这样:  
+```Python
+a, b = 1, 2
+print(id(a), id(b))
+
+def line1(x):
+	a += 1
+	print('函数line1: ',id(a), id(b), a * x + b)
+
+line1(2)
+print(a)
+```
+我们在函数内部定义了赋值, 这里会报错:     
+> 赋值之前引用了局部变量a   
+在函数内部, a并未被定义, 所以这里错误  
+
+## 闭  包  
+什么是闭包, 我们先看一个实例:   
+```Python
+def line_6(k, b):
+    def create_y(x):
+        print(k*x + b)
+    return create_y
+
+line_6_1 = line_6(1, 2)
+
+line_6_1(0)
+line_6_1(2)
+line_6_1(4)
+```
+定 义:  
+#### 我们把这种函数内部定义函数, 且函数引用了外部函数变量, 将这个函数以及用到的变量叫`闭包`     
+事实上, 我们有多种办法可以实现上面传递的参数并保存的功能:   
+1. 其中一种就是面向对象   
+```Python
+class Get(object):
+	def __init__(self, a, b):
+		self.a = a
+		self.b = b
+
+	def method(self, x):
+		print(self.a*x + self.b)
+
+	def __call__(self, x):
+		print(self.a*x  + self.b)
+
+b = Get(2, 5)
+# b.method(5)
+# b.method(8)
+b(5)
+b(10)
+```
+任务可以实现, 但这是其中最浪费资源的创建对象保存值方法      
+### 看下闭包里的细节:   
+```Python
+def line6(a, b):
+	pass
+
+c = line6(7, 8)
+print(c)
+```
+打印: `None`
+```Python
+def line6(a, b):
+	def create(x):
+		pass
+	return create
+c = line6(7, 8)
+print(c)
+```
+打印: `<function line6.<locals>.create at 0x0000026BF78C4400>`   
+可以看到, 我们打印c的值, 它指向了`def create`函数   
+
+像c语言里面, 只有函数, 没有类, 没有匿名,等等   
+但Python更任意, 更灵活, 问题来了:  
+## Python中的类, 匿名, 函数, 各有什么特点?  
+#### 1. 函数   
+函数就是一坨代码, 他不会数据传过去
+它们封装功能, 通过函数名就可以调用 
+
+
+#### 2. [匿名函数](https://www.cnblogs.com/xiao-apple36/p/8577727.html)       
+匿名函数也是函数, 可以封装一部分代码, 可以想到, Python中已经有了函数为什么还要有匿名函数?  
+因为简单,  能够完成小功能的编写, 非常方便    
+```Python
+f = lambda a,b,c:a+b+c
+
+t = lambda : True
+
+c = lambda x,y,z: x*y*z
+c(2,3,4)
+
+(lambda x, y: x if x> y else y)(101,102)
+```
+![ScreenShot-00253]()  
+
+#### 3. 闭包  
+比函数要高端,  不仅可以给代码, 还可以给代码要用到的数据   
+通过闭包, 我们可以只传需要的一部分数据,  而且里面有执行的代码  
+
+#### 4. 对象  
+功能庞大, 数据全, 但有些功能我们不需要     
+ 
+其他存在语言: Js, java也有 
+
+
+装饰器的正确打开方式      
+====
+## 装饰器实例1--刷新:    
+```Python
+@retry(stop_max_attempt_number=5, wait_fixed=60)
+def get_response(input_url, Referer):
+    data = (requests.get(input_url, headers=heade(Referer))).content.decode()
+    response = etree.HTML(data)
+    return response
+```
+例如这段爬虫代码, 请求函数, 通过请求url, 获得response   
+但是, 很多时候, 因为网速, 因为服务器打开资源错误, 导致这个数据一次性打不开, 而再次试图请求的时候是有很大几率能成功的  
+就像我们打开一个网页,  有时候得刷新几次才能打开一个网页   
+
+我们看看这段代码:   
+```Python
+@retry(stop_max_attempt_number=5, wait_fixed=60)
+```
+通过`@`一个名字, 就可以起到装饰的作用, 这里作用: 如果请求不到数据, 就重新请求, 每次间隔60s   
+
+## 装饰器实例2--路由:    
+```Python
+URL_FUNC_DICT = dict()
+def route(url):
+    def set_func(func):
+        URL_FUNC_DICT[url] = func
+        def call_func(*args, **kwargs):
+            return func(*args, **kwargs)
+        return call_func
+    return set_func
+
+@route('/index.py')
+def index():
+    with open('./index.html', 'r', encoding='utf-8') as f:
+        return f.read()
+```
+这是装饰器在Web网络框架中的具体应用   
+我们再看看如下代码:  
+```Python
+def index():
+    with open('./templates/index.html','r',encoding='utf-8') as  f:
+        return f.read()
+
+def login():
+    with open('./templates/center.html', 'r', encoding='utf-8') as  f:
+        return f.read()
+
+def application(env, start_response):
+    start_response('200 OK', [('Content-Type', 'text/html;charset=utf-8')])
+    file_name = env['PATH_INFO']
+    # file_name = "/index.py"
+    if file_name == "/index.py":
+        return index()
+    elif file_name == "/center.py":
+        return login()
+    else:
+        return '404 Not Found'
+```
+这里写了两个返回网页的函数, 加一个WSGI接口   
+当网页数量上千, 上万时, 你肯定不希望手写一千, 一万次的if-elif语句    
+
+于是, 我们使用字典传递了该调用什么函数  
+```Python
+...
+env = dict()
+env['PATH_INFO'] = file_name
+body = self.application(env, self.set_response_header)
+...
+
+URL_FUNC_DICT = {
+    "/index.py":index,
+    "/center.py":center
+}
+def application(env, start_response):
+    start_response('200 OK', [('Content-Type', 'text/html;charset=utf-8')])
+    file_name = env['PATH_INFO']
+    
+    func = URL_FUNC_DICT[file_name]
+    return func()
+```
+这样, 就不用写if-else,  但是, 我我们仍需要手动在字典添加`"/center.py":center`像这样的说明  
+
+## 更好的办法?  
+```Python
+URL_FUNC_DICT = dict()
+
+def route(url):
+    def set_func(func):
+        URL_FUNC_DICT[url] = func
+        def call_func(*args, **kwargs):
+            return func(*args, **kwargs)
+        return call_func
+    return set_func
+
+@route('/index.html')
+def index():
+    with open('./index.html','r',encoding='utf-8') as f:
+        return f.read()
+
+def application(env, start_response):
+    start_response('200 OK', [('Content-Type', 'text/html;charset=utf-8')])
+    file_name = env['PATH_INFO']
+    return URL_FUNC_DICT[file_name]()
+```
+这就是服务器中路由的由来     
+
+## 细节步骤  
+#### 1. 当执行`.py`时, 装饰器先执行获取`索引`, 将`@route('/yyy.html')`中的`/yyy.html`放入字典  
+```
+def route(url):
+    def set_func(func):
+        URL_FUNC_DICT[url] = func
+    return set_func
+```
+
+
+### 怎么放入字典的?  
+```
+def rout('/index.html')
+    def set_func(func):
+        URL_FUNC_DICT[url] = func
+    return set_func
+```
+#### 1. 执行`rout`函数. 请注意: 装饰器在文件导入就会执行, 而不是等到被装饰函数执行才执行  
+#### 2. 中间函数跳过, 不执行     
+#### 3. 执行到: return `set_func`     
+#### 4. 跳到 `def set_func(func):` 此时`func = index`   
+#### 5. `URL_FUNC_DICT['/index.html'] = index`
+#### 6. 
+``` Python
+def call_func(*args, **kwargs):
+        return func(*args, **kwargs)
+    return call_func
+```
+#### 7. 返回`func()`
+
+#### 核心细节:  
+这里属于装饰器的设置外部变量, 比较有挑战, 希望多看几遍, 不理解也最好背下来  
+
+装饰器一般不带参数, 但是带参数的装饰器功能更强大, 因为可以更加灵活调整装饰功能, 像上面的爬虫装饰器一样, 通过调整参数可以得到不同的效果  
+
+于是, 这里有结论:  
+## 通用装饰器与通用带参数的装饰器
+``` Python
+def lv_1(faciont_output):
+    lv_2(*args, **kwargs):
+        print('The func in a hat')
+        return faciont_output(*args, **kwargs)
+    return lv_2(*args, **kwagrs)
+```
+
+## 高级装饰器: 设置外部变量  
+```Python
+def lv_1(date):
+    def lv_2(func):
+        def lv_3():
+            print('The func in a hat ', date)
+            return func
+        return lv_3
+    return lv_2
+```
+```Python
+@lv_1('This is my decorator')
+def Mylady():
+    print('Kiss My Lady')
+```
+
+
 闭 包
 ====
 
