@@ -6,11 +6,11 @@
 我们先看下面一段代码:  
 ```Python
 class Decorator(object):
-	pass
+    pass
 
 @Decorator
 def Worker():
-	print('Do something')
+    print('Do something')
 
 print(Worker())
 ```
@@ -21,20 +21,20 @@ print(Worker())
 ### 所以, 问题来了, 我们类里面该写点什么 ?   
 ```Python
 class Decorator(object):
-	def __call__(self):
-		pass
+    def __call__(self):
+        pass
 ```
 ### 于是, 我们通过类里面的魔法方法就可以Decorator()直接在里面写参数然后调用  
 就像这样的代码:   
 ```
 class Get(object):
-	def __init__(self, a, b):
-		self.a = a
-		self.b = b
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-	def __call__(self, x):
-		result = self.a * x + self.b
-		print(result)
+    def __call__(self, x):
+        result = self.a * x + self.b
+        print(result)
 ```
 然后调用:  
 ```Python
@@ -46,23 +46,23 @@ c(4)
 ### 所以, 上面看起来应该像是这样:  
 ```Python
 class Decorator(object):
-	def __call__(self):
-		print('Do something)
+    def __call__(self):
+        print('Do something)
 ```
 这样还不够, 仅仅调用了装饰器的`Do something`, 没有调用装饰的函数, 我们需要再把函数写进去   
 ```Python
 class Decorator(object):
-	def __init__(self, func):
-		self.__func = func
+    def __init__(self, func):
+        self.__func = func
 
-	def __call__(self):
-		print('Do something)
-		self.__func()
+    def __call__(self):
+        print('Do something)
+        self.__func()
 ```
 ```
 @Decorator
 def Worker():
-	print('Do something')
+    print('Do something')
 
 print(Worker())
 ```
@@ -73,20 +73,20 @@ print(Worker())
 ## 继续分析分析  
 ```Python
 class Decorator(object):
-	def __init__(self, func):
-		print(func)
-		self.__name__ = func
-		self.__func = func
+    def __init__(self, func):
+        print(func)
+        self.__name__ = func
+        self.__func = func
 
-	def __call__(self):
-		print('decorator work: Do something')
-		print(self.__name__)
-		print(self.__func)
-		self.__func()
-
+    def __call__(self):
+        print('decorator work: Do something')
+        print(self.__name__)
+        print(self.__func)
+        self.__func()
+    
 @Decorator
 def Worker():
-	print('work one: Do something')
+    print('work one: Do something')
 
 print(Worker())
 ```
@@ -112,16 +112,16 @@ self.__func = func   ---------<function Worker at 0x000002BF236B4378>
 ### 第一种`func`方法:    
 ```Python
 class Decorator(object):
-	def __init__(self, func):
-		self.func = func
+    def __init__(self, func):
+        self.func = func
 
-	def __call__(self):
-		print('decorator work: Do something')
-		self.func()
+    def __call__(self):
+        print('decorator work: Do something')
+        self.func()
 
 @Decorator
 def Worker():
-	print('work one: Do something')
+    print('work one: Do something')
 	
 Worker()
 
@@ -134,16 +134,16 @@ Worker()
 ### 第二种`__func`方法:    
 ```Python
 class Decorator(object):
-	def __init__(self, func):
-		self.__func = func
+    def __init__(self, func):
+        self.__func = func
 
-	def __call__(self):
-		print('decorator work: Do something')
-		self.__func()
+    def __call__(self):
+        print('decorator work: Do something')
+        self.__func()
 
 @Decorator
 def Worker():
-	print('work one: Do something')
+    print('work one: Do something')
 	
 Worker()
 
@@ -156,16 +156,16 @@ Worker()
 ### 第三种`__func`方法:    
 ```Python
 class Decorator(object):
-	def __init__(self, func):
-		self.__name__ = func
+    def __init__(self, func):
+        self.__name__ = func
 
-	def __call__(self):
-		print('decorator work: Do something')
-		self.__name__()
+    def __call__(self):
+        print('decorator work: Do something')
+        self.__name__()
 
 @Decorator
 def Worker():
-	print('work one: Do something')
+    print('work one: Do something')
 	
 Worker()
 
