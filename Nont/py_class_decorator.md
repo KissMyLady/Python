@@ -25,7 +25,7 @@ class Decorator(object):
 ```
 ### 于是, 我们通过类里面的魔法方法就可以Decorator()直接在里面写参数然后调用  
 就像这样的代码:   
-```
+```Python
 class Get(object):
     def __init__(self, a, b):
         self.a = a
@@ -58,7 +58,7 @@ class Decorator(object):
         print('Do something)
         self.__func()
 ```
-```
+```Python
 @Decorator
 def Worker():
     print('Do something')
@@ -108,7 +108,7 @@ self.__func = func   ---------<function Worker at 0x000002BF236B4378>
 
 
 这三种方法演示:      
-### 第一种`func`方法:    
+### 第一种: `func`方法:    
 ```Python
 class Decorator(object):
     def __init__(self, func):
@@ -130,7 +130,7 @@ Worker()
 # work one: Do something
 ```
 
-### 第二种`__func`方法:    
+### 第二种: `__func`方法:    
 ```Python
 class Decorator(object):
     def __init__(self, func):
@@ -152,7 +152,7 @@ Worker()
 # work one: Do something
 ```
 
-### 第三种`__func`方法:    
+### 第三种: `__func`方法:    
 ```Python
 class Decorator(object):
     def __init__(self, func):
