@@ -14,10 +14,10 @@ print(x.__next__()) # 1
 print(x.__next__()) # 2
 print(x.__next__()) # error
 ```
-![ScreenShot-00258](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00258.jpg)  
+![ScreenShot-00258](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00258.jpg)  
 请注意: 使用`next()`方法也是一样的效果  
 如果使用for循环:  
-![ScreenShot-00259](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00259.jpg)   
+![ScreenShot-00259](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00259.jpg)   
 基本上从来不会用`x.__next__()`方法, 用`for`   
 
 
@@ -51,7 +51,7 @@ for i in fb:
 2, 在1的基础上, 有`__next__`方法  
 
 迭代器测试:  
-![ScreenShot-00260](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot00260.jpg)  
+![ScreenShot-00260](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00260.jpg)  
 1. list, dict, str是Iterable(对象), 但不是Itertor(器)                  
 2. Iterable变成Itertor, 使用iter()函数:     
 > isinstance(iter([]), Iterator)  `True`  
@@ -180,14 +180,5 @@ if 语句的用意是：
 最后一个for循环 遍历生成器的值，取到的值直接可以插入数据库   
 
 切入点: 遇到超大文件，不能直接放在内存中，要分段进行读取 以减少内存的占用
-
-
-
-
-
-
-
-
-
 
 
