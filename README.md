@@ -19,11 +19,12 @@ Python编程
 - [点击进入--常用工具大全](https://github.com/KissMyLady/Tools)  
 
 
-## :pencil2: 高级方法  
-- [点击进入--Python模块导入](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
-- [点击进入--深拷贝与浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtuple.md)  
-- [点击进入--GIL全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
-- [点击进入--闭包与装饰器](https://github.com/KissMyLady/Python/blob/master/Nont/closure.md)  
+## :pencil2: Python高效方法    
+- [Python模块导入](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
+- [深拷贝与浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtuple.md)  
+- [GIL全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
+- [闭包与装饰器](https://github.com/KissMyLady/Python/blob/master/Nont/closure.md)  
+- [生成器-迭代器](https://github.com/KissMyLady/Python/blob/master/Nont/py_iterable.md)  
 - [元 类--敬请期待](#)  
 - [orm--敬请期待](#) 
 
