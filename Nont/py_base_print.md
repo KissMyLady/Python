@@ -16,7 +16,7 @@ for i in tqdm(range(100)):
 ![ScreenShot-00280](https://github.com/KissMyLady/Python/blob/master/Img/Python/ScreenShot-00280.jpg)  
 
 
-```
+```Python
 from progressbar import *
 pr = ProgressBar()
 for i in pr(range(100)):
