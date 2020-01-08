@@ -7,6 +7,7 @@ Python编程
 - [3. 字符串与字典--方法详细说明](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_strdict.md)    
 - [4. 常用Python库说明与使用](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_package.md)  
 - [5. 文件打开剖析与上下文管理器](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_with.md)  
+- [你知道`回`字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
 
 ## :watermelon:  编程规范与提高      
 - [1. Python语言特性--区别](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_py.md)
