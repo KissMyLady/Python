@@ -42,6 +42,7 @@ def partition(q_list, first, last):
     q_list[first], q_list[right_mark] = q_list[right_mark], q_list[first]
     return right_mark
 
+
 if __name__ == "__main__":
     q = Crate_Shuffle_List(30)
     print(q)
