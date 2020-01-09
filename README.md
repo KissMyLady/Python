@@ -13,6 +13,7 @@ Python编程
 - [1. Python语言特性--区别](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_py.md)
 - [2. 代码风格规范(PEP8)](https://github.com/KissMyLady/Python/blob/master/Nont/py_doc_pep8.md)  
 - [3. 字符串--小题目](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_str.md)
+- [4. 五种裴波那契数列递归](https://github.com/KissMyLady/Tools/blob/master/algorithem/feibo.md)  
 
 ##  :computer:  Linux(Ubuntu)  
 - [Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
