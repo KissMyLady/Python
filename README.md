@@ -1,13 +1,20 @@
-Python编程  
+Python AND Linux    
 =====
+##  :computer:  Linux(Ubuntu)  
+- [1. Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
+- [2. 安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
+- [3. 鸟哥Linux](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/linux_bird_com.md)  
+- [常用工具大全--Tools](https://github.com/KissMyLady/Tools)  
 
-## :floppy_disk: 常规基础  
+
+## :floppy_disk: Python常规基础  
 - [1. Python中的数据类型](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_num.md)  
 - [2. 列表与元祖--深拷贝与浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtuple.md)  
 - [3. 字符串与字典--方法详细说明](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_strdict.md)    
 - [4. 常用Python库说明与使用](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_package.md)  
 - [5. 文件打开剖析与上下文管理器](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_with.md)  
 - [你知道回字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
+
 
 ## :watermelon:  编程规范与提高      
 - [1. Python语言特性--区别](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_py.md)
@@ -16,14 +23,8 @@ Python编程
 - [4. 五种裴波那契数列递归](https://github.com/KissMyLady/Tools/blob/master/algorithem/feibo.md)  
 - [5. 快排--Quick_Sock](https://github.com/KissMyLady/Python/blob/master/Nont/Quick_Sort.md)   
 
-##  :computer:  Linux(Ubuntu)  
-- [1. Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
-- [2. 安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
-- [3. 鸟哥Linux](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/linux_bird_com.md)  
-- [常用工具大全--Tools](https://github.com/KissMyLady/Tools)  
 
-
-## :pencil2: Python高效方法    
+## :pencil2: Python进阶方法与使用         
 - [Python--import](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
 - [深拷贝--浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtuple.md)  
 - [GIL--全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
@@ -33,13 +34,11 @@ Python编程
 - [orm--敬请期待](#) 
 
 
-## :bulb: OOP  
+## :bulb: Python中的OOP   
 - [点击进入--OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
 - [点击进入--继承/封装/多态](https://github.com/KissMyLady/Python/blob/master/Nont/oop_init.md)  
 - [方法解析顺序表MRO--敬请期待](#)  
 - [魔法方法--敬请期待](#)  
-
-
 
 
 ## :wrench:    
