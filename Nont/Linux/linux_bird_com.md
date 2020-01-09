@@ -10,24 +10,24 @@
 LANG=en_US.utf8
 export LC_ALL=en_US.utf8
 ```
-![ScreenShot-00285]()   
+![ScreenShot-00285](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00285.jpg)   
 这里我使用的是Ubuntu18.04Server版本, 是纯英文界面   
 但是这里Lang没有显示, 有点奇怪   
 
 ### date
 说明: 显示日期
-![ScreenShot-00286]()   
+![ScreenShot-00286](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00286.jpg)   
 
 查看date使用方法: `man date`, or `info date`   
 
 查看时间: 类似于: 2015-10-16-20:03   
 `date +%Y-%m-%d-%H:%M`   
-![ScreenShot-00288]()   
+![ScreenShot-00288](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00288.jpg)   
 
 
 ### cal
 说明: 显示日历   
-![ScreenShot-00287]()  
+![ScreenShot-00287](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00287.jpg)  
 
 
 ### bc
