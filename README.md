@@ -19,6 +19,7 @@ Python编程
 ##  :computer:  Linux(Ubuntu)  
 - [1. Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
 - [2. 安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
+- [3. 鸟哥Linux](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/linux_bird_com.md)  
 - [常用工具大全--Tools](https://github.com/KissMyLady/Tools)  
 
 
