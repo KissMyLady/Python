@@ -17,9 +17,9 @@ Python编程
 - [5. 快排--Quick_Sock](https://github.com/KissMyLady/Python/blob/master/Nont/Quick_Sort.md)   
 
 ##  :computer:  Linux(Ubuntu)  
-- [Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
-- [安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
-- [点击进入--常用工具大全](https://github.com/KissMyLady/Tools)  
+- [1. Linux常用命令与初始化配置](https://github.com/KissMyLady/Tools/blob/master/note/linux_com.md)  
+- [2. 安装Ubuntu18.04和Python3.8详细流程](https://github.com/KissMyLady/Python/blob/master/Nont/Linux/ubuntu_apt_get.md)  
+- [常用工具大全--Tools](https://github.com/KissMyLady/Tools)  
 
 
 ## :pencil2: Python高效方法    
