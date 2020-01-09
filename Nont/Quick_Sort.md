@@ -1,3 +1,6 @@
+优秀文章:   
+- [选择排序-冒泡-插入-快排](https://github.com/JiongXing/JXSort)  
+
 快速排序算法:  
 ```Python
 def Crate_Shuffle_List(max_num):
