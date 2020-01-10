@@ -30,7 +30,7 @@ Python AND Linux
 - [GIL--全局解释器锁](https://github.com/KissMyLady/Python/blob/master/Nont/Python_GIL.md)
 - [闭包--装饰器](https://github.com/KissMyLady/Python/blob/master/Nont/closure.md)  
 - [生成器--迭代器](https://github.com/KissMyLady/Python/blob/master/Nont/py_iterable.md)  
-- [元 类--敬请期待](#)  
+- [元 类](https://github.com/KissMyLady/Python/blob/master/Nont/py_type_one.md)  
 - [orm--敬请期待](#) 
 
 
