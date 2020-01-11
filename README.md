@@ -35,8 +35,8 @@ Python AND Linux
 
 
 ## :bulb: Python中的OOP   
-- [点击进入--OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
-- [点击进入--继承/封装/多态](https://github.com/KissMyLady/Python/blob/master/Nont/oop_init.md)  
+- [OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
+- [继承/封装/多态](https://github.com/KissMyLady/Python/blob/master/Nont/oop_init.md)  
 - [方法解析顺序表MRO--敬请期待](#)  
 - [魔法方法--敬请期待](#)  
 
