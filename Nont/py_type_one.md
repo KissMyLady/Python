@@ -532,7 +532,7 @@ class type(object)
 实例方法:    
 ```
 def demo(self):
-	print('This is test')
+    print('This is test')
 
 B = type('T_TQ', (farther, ), {'demo':demo})`    
 ```
@@ -550,7 +550,7 @@ B = type('T_TQ', (farther, ), {'demo':demo})`
 ```Python 
 @classmethod  
 def test4():
-	print('This is class method')
+    print('This is class method')
 
 ttt = tyoe('Test4', (), {'test4':test4})
 ```
@@ -559,7 +559,7 @@ ttt = tyoe('Test4', (), {'test4':test4})
 ```Python 
 @staticmethod 
 def test5():
-	print('This is class staticmethod')
+    print('This is class staticmethod')
 
 ttt = tyoe('Test5', (), {'test5':test5})
 ```
@@ -622,10 +622,10 @@ class_attr == upper_attr
 像这样通用装饰器:   
 ```Python
 def one(function_output):
-	def two(*args, **kwargs):
-		print!("This is function");
-		return function_output(*args, **kwargs)
-	return two(*args, **kwargs)
+    def two(*args, **kwargs):
+        print!("This is function");
+        return function_output(*args, **kwargs)
+    return two(*args, **kwargs)
 
 @one
 def demo():
@@ -635,12 +635,12 @@ def demo():
 或是这样的装饰器--带参数装饰器:    
 ```Python  
 def one(date):
-	def two(function_output):
-		def three
-			print('This is a date')
-			return function_output
-		return three
-	return two(*args, **kwargs)
+    def two(function_output):
+        def three
+            print('This is a date')
+            return function_output
+        return three
+    return two(*args, **kwargs)
 ```
 ```Python 
 @one('This is my decorator')
