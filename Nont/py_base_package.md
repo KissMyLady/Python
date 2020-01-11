@@ -3,7 +3,7 @@
 现在我们来谈谈新手大礼包, 也就是零基础学Python入门最常用的包      
 
 ## 新手大礼包:   
-### 1. math   
+# 1. Math   
 [math方法实例讲解--引导知识来源CSDN](https://www.cnblogs.com/666gang/p/10952421.html)  
 当初学编程,  什么都不懂, 觉得编程就是上帝, 特别是计算数字这方面很厉害,  以前就老是听说xxx用分布式主机, 算`派`的值, 然后精确到后面很多很多位   
 于是我就想, 都是编程语言, Python那可定也是绝对没毛病的. 百度后, 发现有几种方法, 其中一种简单的:    
@@ -40,8 +40,7 @@ def atan(x: SupportsFloat) -> float: ...
 可以发现, 数学方法都在里面了, 数学运算能用上,  一般的编程常用的表达式就够了   
      
 
-
-### 2. time  
+# 2. Time  
 [time使用方法](https://www.cnblogs.com/komean/p/10603518.html)
 [time模块进阶使用方法](https://www.cnblogs.com/pal-duan/p/10568829.html)  
 问题来了, 我怎么知道Python运行的慢还是快? 上面那个派计算的时候, 一定要拿一个秒表去卡么?   
@@ -100,7 +99,7 @@ print(time.localtime(time.time()))
 我想女朋友的生日一定不会忘,  太重要了嘛, 不是吗   
 
 
-### 3. Re正则表达式     
+# 3. Re正则表达式     
 [菜鸟教程Re文档](https://www.runoob.com/python/python-reg-expressions.html)尽管Python版本不同, 但re规则是一样的      
 [Re讲解--自文档](https://github.com/KissMyLady/WEB_Server/blob/master/Re/re.md)     
 [Re表达式--自文档](https://github.com/KissMyLady/WEB_Server/blob/master/Re/re_text.md)    
@@ -125,7 +124,7 @@ else:
 匹配任意邮箱:  `r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$'`
 
 
-### 4. Os模块     
+# 4. Os模块     
 打印文件夹方法:   
 ```Python  
 files = os.listdir(Path)
@@ -154,7 +153,7 @@ os.system("shutdown -a") 				# 取消注销计划
 os.system("taskkill /f /im notepad.exe") #关闭程序
 ```
 
-### 5. random模块  
+# 5. Random模块  
 有时候, 我们需要打乱下顺序, 或是list, dict等内建序列     
 ```Python
 from random import shuffle
@@ -223,7 +222,7 @@ time.sleep(random.randint(2, 10))
 前面的time模块就和random模块关联上了, 是不是很简单   
 
 
-## 6. loggingr日志模块  
+# 6. Loggingr日志模块  
 Python中有个logging模块可以完成相关信息的记录，在debug时用它往往事半功倍   	 
 ### 1. 日志级别
 日志一共分成5个等级，从低到高分别是:     
