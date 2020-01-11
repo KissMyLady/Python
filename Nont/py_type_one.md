@@ -390,3 +390,276 @@ python如何用名字调包的?
 ![ScreenShot-00294](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00294.jpg)   
 
 
+# 类的功能: 就是用来创建实例对象的   
+元类: 特殊的类, 用来创建类    
+类:  拥有创建实例对象的功能   
+
+关系划分:    
+> ... → 元类 → 元类 → 类 → 实例对象  
+Python顶层的造物主: 元类   
+
+
+我们先看一段代码:  
+```Python
+def choose_class(name):
+	if name == 'foo':
+		class Foo(object):
+			pass
+		return Foo 
+	else:
+		class Bar(object):
+			pass
+		return Bar
+
+MyClass = choose_class('foo')
+
+print(MyClass)  # 函数返回的是类，不是类的实例
+<class '__main__'.Foo>
+
+print(MyClass())  # 你可以通过这个类创建类实例，也就是对象
+<__main__.Foo object at 0x89c6d4c>
+```
+我们这样就可以动态的创建一个类, 但是这么做很low   
+
+升级方案: Type   
+
+Tpye在python中主要拿来用来测试对象属性, 但是它还可以动态的创建一个类  
+在开发中, 一个函数就该有一个特定功能, 根据传入的参数不同导致功能不一样, 这样是在玩火   
+
+但Python很久前为了兼容以后版本, 保留了它    
+
+# Type创建一个类: 
+
+![ScreenShot-00295](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00295.jpg)  
+```
+Help on class T_T in module __main__:
+
+class T_T(builtins.object)
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  a = 100
+ |  
+ |  b = 5
+```
+我们查看tt是什么情况:　　
+```
+Help on class T_TQ in module __main__:
+
+class T_TQ(builtins.object)
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  a = 100
+ |  
+ |  b = 5
+
+```
+可以发现, 两者一模一样　　  
+help(type)   
+```
+Help on class type in module builtins:
+
+class type(object)
+ |  type(object_or_name, bases, dict)
+ |  type(object) -> the object's type
+ |  type(name, bases, dict) -> a new type
+ |  
+ |  Methods defined here:
+ |  
+ |  __call__(self, /, *args, **kwargs)
+ |      Call self as a function.
+ |  
+ |  __delattr__(self, name, /)
+ |      Implement delattr(self, name).
+ |  
+ |  __dir__(self, /)
+ |      Specialized __dir__ implementation for types.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __instancecheck__(self, instance, /)
+ |      Check if an object is an instance.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __setattr__(self, name, value, /)
+ |      Implement setattr(self, name, value).
+ |  
+ |  __sizeof__(self, /)
+ |      Return memory consumption of the type object.
+ |  
+ |  __subclasscheck__(self, subclass, /)
+ |      Check if a class is a subclass.
+ |  
+ |  __subclasses__(self, /)
+ |      Return a list of immediate subclasses.
+ |  
+:
+```
+真正的type并不是一个函数, 而是一个类, 根据传递的参数不一样,  实现的功能不一样   
+这个类有特殊功能, 它返回的功能, 具有创建实例对象的功能   
+
+所以我们在上面创建的`tt = type('T_TQ', (), {'a':100, 'b':5})`它就是一个元类  
+返回值就是我们说的类, 即动态的创建类   
+
+
+# 元类中的继承与方法       
+继承:    
+`A = type('T_TQ', (farther, ), {'a':100, 'b':5})`   
+
+实例方法:    
+```
+def demo(self):
+	print('This is test')
+
+B = type('T_TQ', (farther, ), {'demo':demo})`    
+```
+所有的方法, 都是创建了一个名字当做key, 然后value指向实例方法   
+
+类方法:  
+[classmethod类方法跟staticmethod静态方法](https://blog.csdn.net/ljt735029684/article/details/80714274)     	
+
+1.使用@staticmethod目的之一是为了增加可读性，不需要参数self的方法都可以加上@staticmethod增加可读性，    
+因为，这个方法是类级别的，在调用时要使用类名。    
+
+2.使用@classmethod是为了处理一些__init__处理不了的赋值问题（一般是参数不对应）,    
+可以当成，有第二，第三个__init__方法，当然它要通过类名显示调用   
+
+```Python 
+@classmethod  
+def test4():
+	print('This is class method')
+
+ttt = tyoe('Test4', (), {'test4':test4})
+```
+
+静态方法:  
+```Python 
+@staticmethod 
+def test5():
+	print('This is class staticmethod')
+
+ttt = tyoe('Test5', (), {'test5':test5})
+```
+
+
+# 元类产生元类   
+我们先看一段代码:
+xx.__class__可以告诉我们创建的对象是谁   
+```
+class TT(object):
+	pass
+
+tt = TT()
+tt.__class__
+>>> __main__.TT
+```
+
+我们现在看看tt是谁创建的:  
+![ScreenShot-00296](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00296.jpg)   
+
+#### 结论: 元类创建类   
+
+
+# 元类创建实例讲解   
+先看一段代码:   
+```Python
+#-*- coding:utf-8 -*-
+def upper_attr(class_name, class_parents, class_attr):
+    new_attr = {}
+    for name,value in class_attr.items():
+        if not name.startswith("__"):
+            new_attr[name.upper()] = value
+
+    return type(class_name, class_parents, new_attr)
+
+class Foo(object, metaclass=upper_attr):
+    bar = 'bip'
+
+print(hasattr(Foo, 'bar'))
+print(hasattr(Foo, 'BAR'))
+
+f = Foo()
+print(f.BAR)
+```
+通过这个返回type, 我们将类方法中的所有小写转换成了大写   
+
+其中的对应关系:      
+class_name == Foo   
+class_parents == object   
+class_attr == upper_attr   
+
+我们type中的字典{}, 然后将key转成大写即可, 最后返回type, 类只能是type创建的      
+
+
+所以说, 在代码中定义class只是表面现象, 实质是type创建的     
+ 
+
+# 元类装饰器   
+在函数中, 我们可以写装饰器, 在不修改函数的前提下添加额外的增强功能  
+像这样通用装饰器:   
+```Python
+def one(function_output):
+	def two(*args, **kwargs):
+		print!("This is function");
+		return function_output(*args, **kwargs)
+	return two(*args, **kwargs)
+
+@one
+def demo():
+	print('This is demo function') 
+```
+
+或是这样的装饰器--带参数装饰器:    
+```Python  
+def one(date):
+	def two(function_output):
+		def three
+			print('This is a date')
+			return function_output
+		return three
+	return two(*args, **kwargs)
+```
+```Python 
+@one('This is my decorator')
+def Mylady():
+    print('Kiss My Lady')
+```
+
+在python3中, 指定用谁创建用`class Foo(object, metaclass=upper_attr):`   
+使用`metaclass=upper_attr`指定   
+
+
+
+
+
+
+
+
+
+
+
+
+
