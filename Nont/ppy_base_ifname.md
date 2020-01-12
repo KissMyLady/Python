@@ -1,4 +1,4 @@
-Python中的__name__=="__main__"  
+[Python中的__name__=="__main__"](https://blog.csdn.net/yjk13703623757/article/details/77918633)  
 ======
 
 结论: 
