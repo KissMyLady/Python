@@ -402,14 +402,14 @@ Python顶层的造物主: 元类
 我们先看一段代码:  
 ```Python
 def choose_class(name):
-	if name == 'foo':
-		class Foo(object):
-			pass
-		return Foo 
-	else:
-		class Bar(object):
-			pass
-		return Bar
+    if name == 'foo':
+        class Foo(object):
+            pass
+        return Foo 
+    else:
+        class Bar(object):
+            pass
+        return Bar
 
 MyClass = choose_class('foo')
 
@@ -570,7 +570,7 @@ ttt = tyoe('Test5', (), {'test5':test5})
 xx.__class__可以告诉我们创建的对象是谁   
 ```
 class TT(object):
-	pass
+    pass
 
 tt = TT()
 tt.__class__
