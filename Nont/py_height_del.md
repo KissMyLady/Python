@@ -43,7 +43,7 @@ NameError: name 'tom' is not defined
 # 我们再看一个升级版demo:  
 ```Python
 class Dog:
-	pass
+    pass
 
 dog1 = Dog()
 dog2 = dog1
@@ -62,11 +62,11 @@ Python中有对象内存计数存在:
 # 我们再看一个升级版demo:  
 ```Python
 class Dog:
-	def __init__(self, name):
-		self.name = name
+    def __init__(self, name):
+        self.name = name
 		
-	def __del__(self):
-		print("{}, 英雄over".format(self.name))
+    def __del__(self):
+        print("{}, 英雄over".format(self.name))
 		
 dog1 = Dog('haha')  # 创建一个对象
 dog2 = dog1
