@@ -9,7 +9,7 @@ Python的内存管理机制能够很好的胜任这份工作。
 
 # 结论: 不管是手动调用del还是由python自动回收, 都会触发__del__方法执行     
 
-我们先看一个简单demo, 演示`__del__`魔法方法`:      
+我们先看一个简单demo, 演示`__del__`魔法方法:      
 ```Python
 class Cat:
     def __init__(self, name):
