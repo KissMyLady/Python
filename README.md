@@ -13,6 +13,7 @@ Python AND Linux
 - [3. 字符串与字典--方法详细说明](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_strdict.md)    
 - [4. Math, Time, Re, Os, Random, Logginer](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_package.md)  
 - [5. 文件打开剖析与上下文管理器](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_with.md)  
+- [6. 主动与被动异常捕获](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_except.md)   
 - [你知道回字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
 
 
