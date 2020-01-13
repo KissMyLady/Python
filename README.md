@@ -38,6 +38,7 @@ Python AND Linux
 
 
 ## :bulb: Python中的OOP   
+- [面向对象中的单例](https://github.com/KissMyLady/Python/blob/master/Nont/py_height_singleton.md)  
 - [OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
 - [继承/封装/多态](https://github.com/KissMyLady/Python/blob/master/Nont/oop_init.md)  
 - [方法解析顺序表MRO--敬请期待](#)  
