@@ -15,7 +15,7 @@ Python AND Linux
 - [5. 文件打开剖析与上下文管理器](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_with.md)  
 - [6. 主动与被动异常捕获](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_except.md)   
 - [7. `if __name__ == "__main__"`](https://github.com/KissMyLady/Python/blob/master/Nont/ppy_base_ifname.md)  
-- [8. Factions](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_factions.md)  
+- [8. Factions](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_function.md)  
 - [你知道回字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
 
 
