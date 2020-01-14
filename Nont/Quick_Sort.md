@@ -50,3 +50,35 @@ if __name__ == "__main__":
     quick_sort(q)
     print(q)
 ```
+
+#  另外一种更高效的递归
+```Python
+import time
+start = time.time()
+
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    PIVOT  = arr[len(arr) // 2]
+    left   = [x for x in arr if x < PIVOT]
+    middle = [x for x in arr if x == PIVOT]
+    right  = [x for x in arr if x > PIVOT]
+    return quicksort(left) + middle + quicksort(right)
+    
+def Crate_Shuffle_List(max_num):
+    from random import shuffle
+    q_list = list()
+    for i in range(max_num):
+        q_list.append(i)
+    shuffle(q_list)
+    return q_list
+
+#q = [3, 5, 8, 1, 2, 9, 4, 7, 6]
+q = Crate_Shuffle_List(10)
+print(quicksort(q))
+
+end = time.time()
+print('程序运行时间: ', end-start)
+```
+
+
