@@ -16,21 +16,21 @@
 #### 1. 封装的第一层含义: 将对象和方法集中在一个地方   
 ```Python
 class Rectangle(object):
-	def __init__(self, w, l):
-		self.width = w
-		self.len = l
+    def __init__(self, w, l):
+        self.width = w
+        self.len = l
 
-	def area(self):					  # 封装
-		return self.width * self.len 
+    def area(self):    # 封装
+        return self.width * self.len 
 ``` 
 #### 2. 隐藏复杂度  
 ```Python
 class Data(object):
-	def __init__(self):
-		self.nums = [1, 2, 3, 4, 5, 6]
+    def __init__(self):
+        self.nums = [1, 2, 3, 4, 5, 6]
 
-	def change_data(self, index, n):
-		self.nums[index] = n
+    def change_data(self, index, n):
+        self.nums[index] = n
 ``` 
 我们可以看到, 数据内部很复杂, 但是改数据很简单  
 > 只需要输入地址(index), 输入想要改成什么数据(n) 
@@ -63,17 +63,17 @@ print(one.nums)
 我们看这个例子:    
 ```Python    
 class PublicPrivate(object):  
-	def __init__(self): 
-		self.public = "safe"  
-		self._unsafe = "unsafe"  
+    def __init__(self): 
+        self.public = "safe"  
+        self._unsafe = "unsafe"  
   
-	def public_method(self):  
-		# 客户端可以使用  
-		pass  
+    def public_method(self):  
+        # 客户端可以使用  
+        pass  
   
-	def _unsafe_method(self):  
-		# 客户端不能使用    
-		pass  
+    def _unsafe_method(self):  
+        # 客户端不能使用    
+        pass  
 ```  
 编写客户端代码的我们看到上述代码后，会知道变量self.public是可以安全使用的     
 > 但是不应该使用变量self._unsafe，因为其以下划线开头     
@@ -87,12 +87,12 @@ class PublicPrivate(object):
 我们先来看一个简单代码块      
 ```Python   
 class Shape():   
-	def __init__(self, w, l):  
-		self.width = w  
-		self.len = l 
+    def __init__(self, w, l):  
+        self.width = w  
+        self.len = l 
   
-	def print_siez(self):   
-		pritn(self.width ,"by", self.len) 
+    def print_siez(self):   
+        pritn(self.width ,"by", self.len) 
 ```  
 ```Python  
 my_shape = Shape(20, 25) 
@@ -102,15 +102,15 @@ my_shape = Shape(20, 25)
 > 在创建子类时，将父类的变量名传入子类，即可继承父类的属性        
 ```Python  
 class Shape(object):  
-	def __init__(self, w, l):  
-		self.width = w 
-		self.len = l  
+    def __init__(self, w, l):  
+        self.width = w 
+        self.len = l  
   
-	def print_siez(self):  
-		pritn(self.width ,"by", self.len)   
+    def print_siez(self):  
+        pritn(self.width ,"by", self.len)   
   
 class Square(Shape): 
-	pass   
+    pass   
 ```  
 ```Python  
 a_S = Square(20, 20) 
@@ -128,19 +128,19 @@ Sqaure类中定义的代码只有pass，表示不执行任何操作
 #### 继承实例  
 ```Python
 class Shape(object):  
-	def __init__(self, w, l):  
-		self.width = w 
-		self.len = l  
+    def __init__(self, w, l):  
+        self.width = w 
+        self.len = l  
   
-	def print_siez(self):  
-		pritn(self.width ,"by", self.len)   
+    def print_siez(self):  
+        pritn(self.width ,"by", self.len)   
   
 class Square(Shape): 
-	def area(self):
-		return self.width * self.len
+    def area(self):
+        return self.width * self.len
 
-	def print_size(self):
-		print("I'm",self.width ,"by", slef.len)   
+    def print_size(self):
+        print("I'm",self.width ,"by", slef.len)   
 ```
 ```Python
 a_square = Square(20, 20)
@@ -200,18 +200,18 @@ draw_circle
 # 未使用多态的代码画图
 shapes = [trl, sql, crl]
 for a_shape in shapes:
-	if type(a_shape) == "Triangle":
-		a_shape.draw_triangle()
-	if type(a_shape) == "Square":
-		a_shape.draw_square()
-	if type(a_shape) == "Circle":
-		a_shape.draw_cirlce()
+    if type(a_shape) == "Triangle":
+        a_shape.draw_triangle()
+    if type(a_shape) == "Square":
+        a_shape.draw_square()
+    if type(a_shape) == "Circle":
+        a_shape.draw_cirlce()
 
 
 # 使用多态的代码画图
 shapes = [trl, swl, crl]
 for a_shape in shapes:
-	a_shape.draw()
+    a_shape.draw()
 ```
 > 如果在没有使用多态的代码中添加新图形  
 > 则必须修改for循环中的代码，检查a_shape的类型并调用其画图方法  
