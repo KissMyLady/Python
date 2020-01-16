@@ -1,6 +1,6 @@
 <!-- GFM-TOC -->
 * [Python2.x与3​​.x版本区别](#Python2.x与3​​.x版本区别)
-* [print 函数](#print 函数)
+* [print函数](#print函数)
 * [Unicode](#Unicode)
 * [除法运算](#除法运算)
 * [异  常](#异  常)
@@ -10,7 +10,7 @@
 * [多个模块被改名](#多个模块被改名)
 * [数据类型](#数据类型)
 * [打开文件](#打开文件)
-* [Map、filter 和 reduce](#Map、filter 和 reduce)
+* [Map、filter和reduce](#Map、filter和reduce)
 <!-- GFM-TOC -->
 
 
@@ -27,7 +27,7 @@
 
 
 # Python 3.0的变化主要在以下几个方面:     
-## print 函数  
+## print函数  
 print语句没有了，取而代之的是print()函数。 Python 2.6与Python 2.7部分地支持这种形式的print语法。在Python 2.6与Python 2.7里面，以下三种形式是等价的:       
 ```Python
 print "fish"
@@ -232,12 +232,12 @@ def sendMail(from_: str, to: str, title: str, body: str) -> bool:
 ## 多个模块被改名(根据PEP8)   
 |旧的名字|	新的名字|
 |---|---|
-|_winreg|	winreg|
-|ConfigParser|	configparser|
-|copy_reg|	copyreg|
+|_winreg|winreg|
+|ConfigParser|configparser|
+|copy_reg|copyreg|
 |Queue|	queue|
-|SocketServer|	socketserver|
-|repr|	reprlib|
+|SocketServer|socketserver|
+|repr|reprlib|
 StringIO模块现在被合并到新的io模组内。 new, md5, gopherlib等模块被删除。 Python 2.6已经支援新的io模组。   
 
 httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被合并到http包内。  
@@ -290,7 +290,7 @@ input( "提示信息" )
 在python3.x中raw_input()和input( )进行了整合，去除了raw_input()，仅保留了input()函数，其接收任意任性输入，将所有输入默认为字符串处理，并返回字符串类型。   
 
 
-## Map、filter 和 reduce   
+## Map、filter和reduce   
   
 首先我们先简单的在 Python2.x 的交互下输入 map 和 filter,看到它们两者的类型是 built-in function(内置函数):  
 ```Python
