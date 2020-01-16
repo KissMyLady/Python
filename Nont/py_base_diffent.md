@@ -1,16 +1,16 @@
 <!-- GFM-TOC -->    
-[Python2.x与3​​.x版本区别](#Python2.x与3​​.x版本区别)    
-[print函数](#print函数)    
-[Unicode](#Unicode)    
-[除法运算](#除法运算)    
-[异常](#异常)    
-[Xrange](#Xrange)    
-[八进制字面量表示](#八进制字面量表示)    
-[不等运算符](#不等运算符)    
-[多个模块被改名](#多个模块被改名)    
-[数据类型](#数据类型)        
-[打开文件](#打开文件)    
-[Map、filter和reduce](#Map、filter和reduce)    
+* [Python2.x与3​​.x版本区别](#1.Python2.x与3​​.x版本区别)    
+* [print函数](#2.print函数)    
+* [Unicode](#3.Unicode)    
+* [除法运算](#4.除法运算)    
+* [异常](#5.异常)    
+* [Xrange](#6.Xrange)    
+* [八进制字面量表示](#7.八进制字面量表示)    
+* [不等运算符](#8.不等运算符)    
+* [多个模块被改名](#9.多个模块被改名)    
+* [数据类型](#10.数据类型)        
+* [打开文件](#11.打开文件)    
+* [Map、filter和reduce](#12.Map、filter和reduce)    
 <!-- GFM-TOC -->    
 
 
