@@ -25,6 +25,7 @@ Python AND Linux
 - [3. 字符串--小题目](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_str.md)
 - [4. 五种裴波那契数列递归](https://github.com/KissMyLady/Tools/blob/master/algorithem/feibo.md)  
 - [5. 快排--Quick_Sock](https://github.com/KissMyLady/Python/blob/master/Nont/Quick_Sort.md)   
+- [6. Python2与Python3](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_diffent.md)  
 
 
 ## :pencil2: Python进阶方法与使用         
