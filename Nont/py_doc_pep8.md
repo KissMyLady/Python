@@ -18,7 +18,7 @@
 <!-- GFM-TOC -->
 
 # [Python官网PEP-8规范](https://www.python.org/dev/peps/pep-0008/)    
-# [PythonPython PEP-8编码风格指南中文版](https://alvinzhu.xyz/2017/10/07/python-pep-8/)    
+# [Python编码风格指南中文版](https://alvinzhu.xyz/2017/10/07/python-pep-8/)    
 # 一、可读性的重要性
 
 编程有很大一部分时间是在阅读代码，不仅要阅读自己的代码，而且要阅读别人的代码。因此，可读性良好的代码能够大大提高编程效率。
