@@ -1,17 +1,17 @@
-<!-- GFM-TOC -->
-* [Python2.x与3​​.x版本区别](#Python2.x与3​​.x版本区别)
-* [print函数](#print函数)
-* [Unicode](#Unicode)
-* [除法运算](#除法运算)
-* [异常](#异常)
-* [Xrange](#Xrange)
-* [八进制字面量表示](#八进制字面量表示)
-* [不等运算符](#不等运算符)
-* [多个模块被改名](#多个模块被改名)
-* [数据类型](#数据类型)
-* [打开文件](#打开文件)
-* [Map、filter和reduce](#Map、filter和reduce)
-<!-- GFM-TOC -->
+<!-- GFM-TOC -->    
+[Python2.x与3​​.x版本区别](#Python2.x与3​​.x版本区别)    
+[print函数](#print函数)    
+[Unicode](#Unicode)    
+[除法运算](#除法运算)    
+[异常](#异常)    
+[Xrange](#Xrange)    
+[八进制字面量表示](#八进制字面量表示)    
+[不等运算符](#不等运算符)    
+[多个模块被改名](#多个模块被改名)    
+[数据类型](#数据类型)        
+[打开文件](#打开文件)    
+[Map、filter和reduce](#Map、filter和reduce)    
+<!-- GFM-TOC -->    
 
 
 # [Python2.x与3​​.x版本区别](https://www.runoob.com/python/python-2x-3x.html)  
