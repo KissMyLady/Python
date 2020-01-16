@@ -230,7 +230,7 @@ def sendMail(from_: str, to: str, title: str, body: str) -> bool:
 ```
 
 ## 多个模块被改名(根据PEP8)   
-|旧的名字|	新的名字|
+|旧的名字|新的名字|
 |---|---|
 |_winreg|winreg|
 |ConfigParser|configparser|
