@@ -3,7 +3,7 @@
 * [print函数](#print函数)
 * [Unicode](#Unicode)
 * [除法运算](#除法运算)
-* [异  常](#异  常)
+* [异常](#异常)
 * [Xrange](#Xrange)
 * [八进制字面量表示](#八进制字面量表示)
 * [不等运算符](#不等运算符)
@@ -112,7 +112,7 @@ python 3.x:
 0
 ```
 
-## 异  常  
+## 异常  
 在 Python 3 中处理异常也轻微的改变了，在 Python 3 中我们现在使用 as 作为关键词。  
 
 捕获异常的语法由 except exc, var 改为 except exc as var。   
