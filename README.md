@@ -20,12 +20,13 @@ Python AND Linux
 
 
 ## :watermelon:  编程规范与提高      
-- [1. Python语言特性--区别](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_py.md)
-- [2. 代码风格规范(PEP8)](https://github.com/KissMyLady/Python/blob/master/Nont/py_doc_pep8.md)  
-- [3. 字符串--小题目](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_str.md)
-- [4. 五种裴波那契数列递归](https://github.com/KissMyLady/Tools/blob/master/algorithem/feibo.md)  
-- [5. 快排--Quick_Sock](https://github.com/KissMyLady/Python/blob/master/Nont/Quick_Sort.md)   
-- [6. Python2与Python3](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_diffent.md)  
+- [1. Python2与Python3](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_diffent.md)  
+- [2. Python语言特性--区别](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_py.md)
+- [3. 代码风格规范(PEP8)](https://github.com/KissMyLady/Python/blob/master/Nont/py_doc_pep8.md)  
+- [4. 字符串--小题目](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_str.md)
+- [5. 五种裴波那契数列递归](https://github.com/KissMyLady/Tools/blob/master/algorithem/feibo.md)  
+- [6. 快排--Quick_Sock](https://github.com/KissMyLady/Python/blob/master/Nont/Quick_Sort.md)   
+
 
 
 ## :pencil2: Python进阶方法与使用         
