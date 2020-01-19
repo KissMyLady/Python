@@ -146,31 +146,31 @@ print(new)
 ```Python
 class Stack(object):
     def __init__(self):
-		self.items = list()
+        self.items = list()
 
-	def is_empty(self):
-		return self.items == []
+    def is_empty(self):
+        return self.items == []
 	
-	def push(self, item):
-		self.items.append(item)
+    def push(self, item):
+        self.items.append(item)
 
-	def pop(self):
-		return self.items.pop()
+    def pop(self):
+        return self.items.pop()
 	
-	def peek(self):
-		last = len(self.items)-1
-		return self.items[last]
+    def peek(self):
+        last = len(self.items)-1
+        return self.items[last]
 	
-	def size(self):
-		return len(self.items)
+    def size(self):
+        return len(self.items)
 
 s = Stack()
 for i in 'hello world':
-	s.push(i)
+    s.push(i)
 	
 new_str = ''
 for i in range(s.size()):
-	new_str += s.pop()
+    new_str += s.pop()
 	
 print(new_str)
 ```
@@ -235,21 +235,4 @@ c= a.strip()
 print(c)
 ```
 
-2019-1-2注:   
-想面试一份程序员的职业, 但充满了对未知的恐惧.  
-网上的写的像段子一样的经历也并不太可信, 假想我是一名真正的程序员, 我可能不会把我宝贵的时间浪费在社交网上讲故事的  
-还有很多想要看的书, 想要唱的歌, 现在临近过年, 也是没有什么时间能挤出来干些别的事情了. 
-找个靠谱的工作, 在这陡峭的路上, 很开心, 也非常慌  
-
-但, 慌是这样子, 扎实学还是这样子, 时间就在这里, 不如在有压力下好好复习复习, 回顾回顾, 再把以前学了就忘的东西给捡回来  
-
-又说什么是幸福, 是找到一份好工作, 然后对别人说我是程序员 ? 
-
-是经过的自己的努力, 然后到达目的地 ?    
-
-假设找到工作了, 我有能力胜任这份工作吗?   
-
-我有足够的能力胜任吗 ?     
-
-大佬如果有什么想说的话欢迎大佬留言  
 
