@@ -16,6 +16,7 @@ Python AND Linux
 - [6. 主动与被动异常捕获](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_except.md)   
 - [7. `if __name__ == "__main__"`](https://github.com/KissMyLady/Python/blob/master/Nont/ppy_base_ifname.md)  
 - [8. Factions](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_function.md)  
+- [9. Python之禅](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_this.md)  
 - [你知道回字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
 
 
