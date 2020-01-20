@@ -108,3 +108,4 @@ Python 提供了 with语法用于简化资源操作的后续清除操作
 * 实现原理建立在上下文管理器之上    
 * 此外，Python 还提供了一个 contextmanager装饰器更进一步简化上下管理器的实现方式     
 
+# [菜鸟教程-文件读取方法](https://www.runoob.com/python/file-methods.html)  
