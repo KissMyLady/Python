@@ -15,12 +15,10 @@ JSON的序列化
 
 
 03. json中常用的方法:     
-|  方 法 |  描 述 |
-| :---: | --- |
-| `json.dumps()` | 将 Python 对象编码成 JSON 字符串  |
-| `json.loads()`  |  将已编码的 JSON 字符串解码为 Python 对象 |
-| `json.dump()`| 将Python内置类型序列化为json对象后写入文件|
-| `json.load()` | 读取文件中json形式的字符串元素转化为Python类型 |
+`json.dumps()`: 将 Python 对象编码成 JSON 字符串    
+`json.loads()`: 将已编码的 JSON 字符串解码为 Python 对象   
+`json.dump()` : 将Python内置类型序列化为json对象后写入文件   
+`json.load()` : 读取文件中json形式的字符串元素转化为Python类型   
 
 
 
@@ -43,25 +41,23 @@ JSON的序列化
 因为JSON表示出来就是一个字符串，可以被所有语言读取，也可以方便地存储到磁盘或者通过网络传输   
 
 JSON不仅是标准格式，并且比XML更快，而且可以直接在Web页面中读取，非常方便   
-| JSON类型  | Python类型实例 |
-| :---: | --- |
-| {} | dict |
-| [] | list | 
-| "string" | str |
-| 1234.56  | int或float |
-| true     | True |
-| false    | False | 
-| null     | None |
-
-|Python类型抽象  JSON类型抽象|
-|  :---: | --- |
-| dict |   object |
-| list, tuple |  	 array |
-| str, unicode	| string |
-| int, long, float| number |
-| True	| true |
-| False	| false | 
-| None |	null |
+JSON类型-----Python类型实例 
+`{}`-----dict` 
+`[]`-----list`  
+`"string"`-----str` 
+`1234.56`-----int或float` 
+`true`------`True`
+`false`-----`False`
+`null`------`None` 
+ 
+Python类型抽象-----JSON类型抽象    
+`dict`-----object 
+`list, tuple`------array 
+`str, unicode`-----string 
+`int, long, float`-----number 
+`True`------true
+`False`-----false 
+`None`------null 
 
 
 Python内置的json模块提供了非常完善的Python对象到JSON格式的转换   
