@@ -1,4 +1,4 @@
-JSON的序列化
+JSON序列化
 =========
 
 相关知识引导说明:    
@@ -128,16 +128,15 @@ def dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True,
         allow_nan=True, cls=None, indent=None, separators=None,
         default=None, sort_keys=False, **kw):
 ```
-| :---: | --- |
-| 函数作用:       | 将Python的对象转变成JSON对象|
-| skipkeys:      | 如果为True的话，则只能是字典对象，否则会TypeError错误, 默认False|
-| ensure_ascii:  | 确定是否为ASCII编码|
-| check_circular:| 循环类型检查，如果为True的话|
-| allow_nan:     | 确定是否为允许的值|
-| indent:        | 会以美观的方式来打印，呈现|
-| separators:    | 对象分隔符，默认为, |
-| encoding:      | 编码方式,默认为utf-8   |  
-| sort_keys:     | 如果是字典对象，选择True的话，会按照键的ASCII码来排序|    
+`函数作用: `       将Python的对象转变成JSON对象    
+`skipkeys: `      如果为True的话，则只能是字典对象，否则会TypeError错误, 默认False    
+`ensure_ascii:`    确定是否为ASCII编码    
+`check_circular:`  循环类型检查，如果为True的话    
+`allow_nan:`       确定是否为允许的值  
+`indent: `        会以美观的方式来打印，呈现       
+`separators:`      对象分隔符，默认为,     
+`encoding:`        编码方式,默认为utf-8         
+`sort_keys:`       如果是字典对象，选择True的话，会按照键的ASCII码来排序   
 
 
 这些可选参数就是让我们来定制JSON序列化。 前面的代码之所以无法把Man类实例序列化为JSON     
