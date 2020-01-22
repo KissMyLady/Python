@@ -15,12 +15,12 @@ JSON的序列化
 
 
 03. json中常用的方法:     
-|方法 |	描述|  
-| :---: | --- |  
-| json.dumps() |将 Python 对象编码成 JSON 字符串| 
-| json.loads() |将已编码的 JSON 字符串解码为 Python 对象|   
-| json.dump()  |将Python内置类型序列化为json对象后写入文件|  
-| json.load()  |读取文件中json形式的字符串元素转化为Python类型|
+|  方法 |  描述 |
+| :---: | --- |
+| json.dumps() | 将 Python 对象编码成 JSON 字符串  |
+| json.loads()  |  将已编码的 JSON 字符串解码为 Python 对象 |
+| json.dump()| 将Python内置类型序列化为json对象后写入文件|
+| json.load() | 读取文件中json形式的字符串元素转化为Python类型 |
 
 
 
