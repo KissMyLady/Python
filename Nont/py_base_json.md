@@ -17,10 +17,10 @@ JSON的序列化
 03. json中常用的方法:     
 |方法 |	描述|  
 | :---: | --- |  
-|json.dumps() |将 Python 对象编码成 JSON 字符串| 
-|json.loads() |将已编码的 JSON 字符串解码为 Python 对象|   
-|json.dump()  |将Python内置类型序列化为json对象后写入文件|  
-|json.load()  |读取文件中json形式的字符串元素转化为Python类型|
+| json.dumps() |将 Python 对象编码成 JSON 字符串| 
+| json.loads() |将已编码的 JSON 字符串解码为 Python 对象|   
+| json.dump()  |将Python内置类型序列化为json对象后写入文件|  
+| json.load()  |读取文件中json形式的字符串元素转化为Python类型|
 
 
 
@@ -43,25 +43,25 @@ JSON的序列化
 因为JSON表示出来就是一个字符串，可以被所有语言读取，也可以方便地存储到磁盘或者通过网络传输   
 
 JSON不仅是标准格式，并且比XML更快，而且可以直接在Web页面中读取，非常方便   
-|JSON类型  | Python类型实例|
+| JSON类型  | Python类型实例 |
 | :---: | --- |
-|{} | dict|
-|[] |list|
-|"string" | str|
-|1234.56  |int或float|
-|true     |True|
-|false    |False|
-|null     |None|
+| {} | dict |
+| [] | list | 
+| "string" | str |
+| 1234.56  | int或float |
+| true     | True |
+| false    | False | 
+| null     | None |
 
 |Python类型抽象  JSON类型抽象|
-| :---: | --- |
-|dict |   object|
-|list, tuple|  	 array|
-|str, unicode	| string|
-|int, long, float| number|
-|True	| true|
-|False	| false| 
-|None |	null|
+|  :---: | --- |
+| dict |   object |
+| list, tuple |  	 array |
+| str, unicode	| string |
+| int, long, float| number |
+| True	| true |
+| False	| false | 
+| None |	null |
 
 
 Python内置的json模块提供了非常完善的Python对象到JSON格式的转换   
@@ -108,9 +108,9 @@ Out[12]: 'true'
 ```Python
 import json
 class OneMan(object):
-	def __init__(self, name, age):
-		self.name = name
-		self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 		
 tom = OneMan('Tom', 22)
 print(json.dumps(tom))
@@ -132,15 +132,16 @@ def dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True,
         allow_nan=True, cls=None, indent=None, separators=None,
         default=None, sort_keys=False, **kw):
 ```
-|函数作用:       | 将Python的对象转变成JSON对象|
-|skipkeys:      | 如果为True的话，则只能是字典对象，否则会TypeError错误, 默认False|
-|ensure_ascii:  |确定是否为ASCII编码|
-|check_circular:| 循环类型检查，如果为True的话|
-|allow_nan:     | 确定是否为允许的值|
-|indent:        |会以美观的方式来打印，呈现|
-|separators:    | 对象分隔符，默认为, |
-|encoding:      | 编码方式,默认为utf-8   |  
-|sort_keys:     | 如果是字典对象，选择True的话，会按照键的ASCII码来排序|    
+| :---: | --- |
+| 函数作用:       | 将Python的对象转变成JSON对象|
+| skipkeys:      | 如果为True的话，则只能是字典对象，否则会TypeError错误, 默认False|
+| ensure_ascii:  | 确定是否为ASCII编码|
+| check_circular:| 循环类型检查，如果为True的话|
+| allow_nan:     | 确定是否为允许的值|
+| indent:        | 会以美观的方式来打印，呈现|
+| separators:    | 对象分隔符，默认为, |
+| encoding:      | 编码方式,默认为utf-8   |  
+| sort_keys:     | 如果是字典对象，选择True的话，会按照键的ASCII码来排序|    
 
 
 这些可选参数就是让我们来定制JSON序列化。 前面的代码之所以无法把Man类实例序列化为JSON     
@@ -152,14 +153,14 @@ def dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True,
 import json
 
 class OneMan(object):
-	def __init__(self, name, age):
-		self.name = name
-		self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 		
 def TwoChange(obj):
-	return {
-		"name": obj.name,
-		"age": obj.age}
+    return {
+        "name": obj.name,
+        "age": obj.age}
 
 o = OneMan('Tom', 22)
 print(json.dumps(o, default=TwoChange))
@@ -174,9 +175,9 @@ print(json.dumps(o, default=TwoChange))
 import json
 
 class TwoMan(object):
-	def __init__(self, name, age):
-		self.name = name
-		self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
 t = TwoMan('Jack', 22)
 print(json.dumps(t, default  = lambda obj: obj.__dict__,  # 将任意的对象，转换成字典的方式
@@ -190,14 +191,14 @@ print(json.dumps(t, default  = lambda obj: obj.__dict__,  # 将任意的对象�
 import json
 
 class Three(object):
-	def __init__(self, name, age):
-		self.name = name
-		self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 		
 json_str = '{"age":22, "name":"Dome"}'
 
 def handle(someone):
-	return Three(someone['name'], someone['age'])
+    return Three(someone['name'], someone['age'])
 
 m = json.loads(json_str, object_hook=handle)
 
