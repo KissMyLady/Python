@@ -2,7 +2,7 @@
 
 all 一般判断, 所有元素都不为空, 返回True   
 有一个假, 返回假(包含{}, [], 0, false(), '')
-
+请注意, 这里都是可迭代对象判断(iterable)
 ```Python
 names  = ('name', 'laoda', 'laoer', )
 names2 = ('name', 'laoda', 'laoer', False)
