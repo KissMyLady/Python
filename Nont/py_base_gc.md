@@ -1,5 +1,18 @@
 [Python内存管理机制](https://www.cnblogs.com/geaozhang/p/7111961.html)
 ===
+[Python内存管理及释放](https://blog.csdn.net/jiangjiang_jian/article/details/79140742)  
+Python会自己管理内存，实际上，对于占用很大内存的对象，并不会马上释放。  
+举例，`a=range(10000*10000)`，会发现内存飙升一个多G，del a 或者`a=[]`都不能将内存降下来     
+
+del 可以删除多个变量，del a,b,c,d
+办法：
+```Python
+import gc （garbage collector）
+del a
+gc.collect()
+```
+马上内存就释放了。
+
 
 Python的内存管理机制：引用计数、 垃圾回收、 内存池机制
 
