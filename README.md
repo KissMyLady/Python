@@ -34,6 +34,7 @@ Python AND Linux
 
 
 ## :pencil2: Python进阶方法与使用         
+- [Pprint打印](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_pprint.md)  
 - [Python垃圾回收机制](https://github.com/KissMyLady/Python/blob/master/Nont/py_height_del.md)     
 - [内存管理](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_gc.md)  
 - [元 类](https://github.com/KissMyLady/Python/blob/master/Nont/py_type_one.md)  
