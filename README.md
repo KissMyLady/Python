@@ -21,6 +21,7 @@ Python AND Linux
 - [11. Any与All方法](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_anyall.md)  
 - [12. Monkey补丁](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_monkey.md)  
 - [13. Time函数-时间偏移](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_time.md)  
+- [14. Python传参与传址](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_chuandi.md)  
 - [你知道回字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
 
 
