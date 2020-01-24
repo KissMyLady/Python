@@ -138,7 +138,7 @@ list2.append(list1)
 ```
 list1与list2相互引用，如果不存在其他对象对它们的引用，list1与list2的引用计数也仍然为1，所占用的内存永远无法被回收，这将是致命的。   
 对于如今的强大硬件，缺点1尚可接受，但是循环引用导致内存泄露，[注定Python还将引入新的回收机制](https://my.oschina.net/hebianxizao/blog/57367?fromerr=KJozamtm)。(标记清除和分代收集)    
-
+![347](https://github.com/KissMyLady/Python/blob/master/Img/ScreenShot-00347.jpg)     
 
 [画说Ruby与Python垃圾回收](https://ruby-china.org/topics/28127)   
 ========  
