@@ -35,6 +35,7 @@ Python AND Linux
 
 ## :pencil2: Python进阶方法与使用         
 - [Python垃圾回收机制](https://github.com/KissMyLady/Python/blob/master/Nont/py_height_del.md)     
+- [内存管理](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_gc.md)  
 - [元 类](https://github.com/KissMyLady/Python/blob/master/Nont/py_type_one.md)  
 - [Python--import](https://github.com/KissMyLady/Python/blob/master/Nont/python_import.md)  
 - [深拷贝--浅拷贝](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_listtuple.md)  
