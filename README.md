@@ -20,6 +20,7 @@ Python AND Linux
 - [10. Json序列化](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_json.md)  
 - [11. Any与All方法](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_anyall.md)  
 - [12. Monkey补丁](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_monkey.md)  
+- [13. Time函数-时间偏移](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_time.md)  
 - [你知道回字有多少种写法?--Print](https://github.com/KissMyLady/Python/blob/master/Nont/py_base_print.md)    
 
 
@@ -46,7 +47,7 @@ Python AND Linux
 - [orm--敬请期待](#) 
 
 
-## :bulb: Python中的OOP   
+## :bulb: Object-Oriented-Programming 
 - [单  例](https://github.com/KissMyLady/Python/blob/master/Nont/py_height_singleton.md)  
 - [OOP私有化](https://github.com/KissMyLady/Python/blob/master/Nont/oop_private.md)
 - [继承/封装/多态](https://github.com/KissMyLady/Python/blob/master/Nont/oop_init.md)  
