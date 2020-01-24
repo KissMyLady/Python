@@ -47,7 +47,7 @@ mm = n
 print(sys.getrefcount(6666666))
 ```
 #### 3. 作为容器对象的一个元素
-![ScreenShot-00345]()  
+![ScreenShot-00345](https://github.com/KissMyLady/Python/blob/master/Img/Python/ScreenShot-00345.jpg)  
 ```Python
 good_day = [10000]
 import sys
