@@ -1,8 +1,7 @@
 [Python中的__name__=="__main__"](https://blog.csdn.net/yjk13703623757/article/details/77918633)  
 ======
 
-结论: 
-`if __name__ == '__main__'`的意思是:   
+结 论: 
 #### 当`.py`文件被直接运行时，`if __name__ == '__main__'`之下的代码块将被运行     
 #### 当`.py`文件以模块形式被导入时，`if __name__ == '__main__'`之下的代码块不被运行       
 
