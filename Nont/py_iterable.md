@@ -24,15 +24,15 @@ print(x.__next__()) # error
 我们再看一种生成器:    
 ```Python
 def fib(max):
-	n, a, b =0, 0, 1
-	while n < max:
-		yield b
-		a, b = b, a +b
-		n += 1
+    n, a, b =0, 0, 1
+    while n < max:
+        yield b
+        a, b = b, a +b
+        n += 1
 		
 fb = fib(10)
 for i in fb:
-	print(i)
+    print(i)
 ```
 它将分别打印数列的前10项   
 此时的`fb`, 就是一个`生成器`: `<generator object fib at 0x0577CE98>`   
@@ -60,16 +60,16 @@ for i in fb:
 ### `for`循环的本质:     
 ```Python
 for i in [1, 2, 3]:
-	pass
+    pass
 ```
 完全等价于:   
 ```Python
 iterator = iter([1, 2, 3])
 while True:
-	try:
-		a = next(iterator)
-	except StopIteration:
-		break
+    try:
+        a = next(iterator)
+    except StopIteration:
+        break
 ```
 可以看到, for循环就是不断调用next实现的   
 
